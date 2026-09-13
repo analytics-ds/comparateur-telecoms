@@ -1,0 +1,45 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir:*)",
+      "Bash(cat:*)",
+      "Bash(grep:*)",
+      "Bash(jq:*)",
+      "Bash(git:*)",
+      "Bash(hugo:*)",
+      "Bash(hugo)",
+      "Bash(sudo dpkg:*)",
+      "Bash(dpkg-deb:*)",
+      "Bash(npm:*)",
+      "Bash(npx:*)",
+      "Bash(wget:*)",
+      "Bash(which:*)",
+      "Bash(curl:*)",
+      "Bash(python3:*)",
+      "Bash(bash:*)",
+      "Bash(cwebp:*)",
+      "Bash(ls:*)",
+      "Bash(head:*)",
+      "Bash(tail:*)",
+      "Bash(cd:*)",
+      "Bash(rm:*)",
+      "Bash(cp:*)",
+      "Bash(mv:*)",
+      "Bash(wc:*)",
+      "Bash(file:*)",
+      "Bash(date:*)",
+      "Bash(export:*)",
+      "Bash(echo:*)",
+      "Bash(pwd)",
+      "Edit(**)",
+      "Write(**)",
+      "Read(**)",
+      "Glob(**)",
+      "Grep(**)",
+      "WebSearch(**)"
+    ]
+  },
+  "worktree": {
+    "bgIsolation": "none"
+  }
+}

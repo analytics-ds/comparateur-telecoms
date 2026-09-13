@@ -1,0 +1,181 @@
+{{ define "main" }}
+{{ $posts := (where site.RegularPages "Section" "blog").ByDate.Reverse }}
+{{ $featured := index $posts 0 }}
+{{ $trends := first 3 (after 1 $posts) }}
+{{ $picks := first 4 (after 4 $posts) }}
+
+<!-- Hero sombre : article vedette + tendances -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    {{ with $featured }}
+    {{ $fa := "" }}{{ with .Params.author }}{{ $fa = index hugo.Data.authors . }}{{ end }}
+    <article class="hero-main">
+      <div class="hero-main-bg">{{ with .Params.image }}<img src="{{ . | relURL }}" alt="" loading="eager" fetchpriority="high">{{ end }}</div>
+      <div class="hero-main-content">
+        <div class="card-pills">{{ range first 1 .Params.categories }}{{ partial "pill.html" . }}{{ end }}</div>
+        <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+        <p class="excerpt">{{ .Description }}</p>
+        <div class="meta">
+          {{ with $fa }}
+            {{ partial "avatar.html" (dict "author" . "class" "avatar") }}
+            <a href="{{ printf "auteurs/%s/" .id | relLangURL }}">{{ .name }}</a>
+          {{ end }}
+          {{ partial "clock.html" . }}
+        </div>
+      </div>
+    </article>
+    {{ end }}
+    <aside class="hero-side">
+      <span class="hero-side-title">{{ i18n "trends" }}</span>
+      {{ range $trends }}
+      <a class="trend" href="{{ .RelPermalink }}">
+        <span class="trend-thumb">{{ with .Params.image }}<img src="{{ . | relURL }}" alt="" loading="lazy">{{ end }}</span>
+        <span>
+          <h3>{{ .Title }}</h3>
+          {{ partial "clock.html" . }}
+        </span>
+      </a>
+      {{ end }}
+    </aside>
+  </div>
+</section>
+
+<!-- Bulles rubriques -->
+<div class="wrap">
+  <nav class="cat-bubbles" aria-label="{{ i18n "rubriques" }}">
+    {{ range .Site.Menus.main }}
+      {{ with .Page }}
+      {{ $tp := .Pages.ByDate.Reverse }}
+      {{ $lead := index $tp 0 }}
+      <a class="cat-bubble" href="{{ .RelPermalink }}">
+        <span class="cat-bubble-img">{{ with $lead.Params.image }}<img src="{{ . | relURL }}" alt="" loading="lazy">{{ end }}</span>
+        <span class="name">{{ .LinkTitle }}</span>
+        <span class="count">{{ i18n "articleCount" (len $tp) }}</span>
+      </a>
+      {{ end }}
+    {{ end }}
+  </nav>
+</div>
+
+<!-- Choix de la rédaction -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>{{ i18n "editorsPicks" }}</h2>
+      <a class="see-all" href="{{ "blog/" | relLangURL }}">{{ i18n "seeMore" }}
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+    <div class="card-grid">
+      {{ range $picks }}{{ partial "card.html" . }}{{ end }}
+    </div>
+  </div>
+</section>
+
+<!-- Sections par rubrique : styles alternés -->
+{{ $i := 0 }}
+{{ range .Site.Menus.main }}
+  {{ with .Page }}
+    {{ $tp := .Pages.ByDate.Reverse }}
+    {{ if ge (len $tp) 2 }}
+      {{ $i = add $i 1 }}
+      {{ $style := mod $i 3 }}
+
+      {{ if eq $style 2 }}
+      <!-- Style mosaïque sombre -->
+      <section class="section band-dark">
+        <div class="wrap">
+          <div class="section-head">
+            <h2>{{ .LinkTitle }}</h2>
+            <a class="see-all" href="{{ .RelPermalink }}">{{ i18n "seeMore" }}
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+          <div class="mosaic">
+            {{ $lead := index $tp 0 }}
+            {{ with $lead }}
+            <article class="dcard dcard-lead">
+              <div class="dcard-bg">{{ with .Params.image }}<img src="{{ . | relURL }}" alt="" loading="lazy">{{ end }}</div>
+              <div class="dcard-content">
+                <div class="card-pills">{{ range first 1 .Params.categories }}{{ partial "pill.html" . }}{{ end }}</div>
+                <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                {{ partial "clock.html" . }}
+              </div>
+            </article>
+            {{ end }}
+            <div class="mosaic-side">
+              {{ range first 2 (after 1 $tp) }}
+              <article class="dcard">
+                <div class="dcard-bg">{{ with .Params.image }}<img src="{{ . | relURL }}" alt="" loading="lazy">{{ end }}</div>
+                <div class="dcard-content">
+                  <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                  {{ partial "clock.html" . }}
+                </div>
+              </article>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {{ else if eq $style 0 }}
+      <!-- Style bande crème -->
+      <section class="section band-cream">
+        <div class="wrap">
+          <div class="section-head">
+            <h2>{{ .LinkTitle }}</h2>
+            <a class="see-all" href="{{ .RelPermalink }}">{{ i18n "seeMore" }}
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+          <div class="hlist">
+            {{ range first 6 $tp }}
+            <a class="hitem" href="{{ .RelPermalink }}">
+              <span class="hitem-thumb">{{ with .Params.image }}<img src="{{ . | relURL }}" alt="" loading="lazy">{{ end }}</span>
+              <span>
+                <span class="card-pills">{{ range first 1 .Params.categories }}<span class="pill pill-{{ . | urlize }}"><span class="pill-dot"></span>{{ . }}</span>{{ end }}</span>
+                <h3>{{ .Title }}</h3>
+                {{ partial "clock.html" . }}
+              </span>
+            </a>
+            {{ end }}
+          </div>
+        </div>
+      </section>
+
+      {{ else }}
+      <!-- Style grille blanche -->
+      <section class="section">
+        <div class="wrap">
+          <div class="section-head">
+            <h2>{{ .LinkTitle }}</h2>
+            <a class="see-all" href="{{ .RelPermalink }}">{{ i18n "seeMore" }}
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+          <div class="card-grid">
+            {{ range first 4 $tp }}{{ partial "card.html" . }}{{ end }}
+          </div>
+        </div>
+      </section>
+      {{ end }}
+
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+<!-- CTA newsletter -->
+<section class="section">
+  <div class="wrap">
+    <div class="cta-band">
+      <div>
+        <h2>{{ i18n "ctaTitle" }}</h2>
+        <p>{{ i18n "ctaText" }}</p>
+      </div>
+      <a class="btn" href="#newsletter">{{ i18n "getNewsletter" }}
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+{{ end }}

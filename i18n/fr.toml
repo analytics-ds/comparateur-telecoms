@@ -1,0 +1,190 @@
+[skipToContent]
+other = "Aller au contenu"
+
+[topbarNote]
+other = "Box, forfaits et opérateurs comparés sans jargon"
+
+[getNewsletter]
+other = "Recevoir la newsletter"
+
+[tickerBadge]
+other = "À ne pas rater"
+
+[trends]
+other = "Tendances"
+
+[editorsPicks]
+other = "Choix de la rédaction"
+
+[seeMore]
+other = "En voir plus"
+
+[home]
+other = "Accueil"
+
+[theMedia]
+other = "Le média"
+
+[rubrique]
+other = "Rubrique"
+
+[rubriques]
+other = "Rubriques"
+
+[ourRubriques]
+other = "Nos rubriques"
+
+[browseByTheme]
+other = "Parcourez le média par thématique."
+
+[allTopics]
+other = "Tous les sujets"
+
+[browseByTopic]
+other = "Parcourez le média par sujet précis."
+
+[topics]
+other = "Sujets"
+
+[allArticles]
+other = "Tous les articles"
+
+[articlesToExplore]
+one = "{{ .Count }} article à explorer."
+other = "{{ .Count }} articles à explorer."
+
+[articleCount]
+one = "{{ .Count }} article"
+other = "{{ .Count }} articles"
+
+[minRead]
+other = "min de lecture"
+
+[by]
+other = "Par"
+
+[share]
+other = "Partager"
+
+[summary]
+other = "Sommaire"
+
+[moreArticles]
+other = "Plus d'articles"
+
+[aboutAuthor]
+other = "À propos de l'auteur"
+
+[expertiseLabel]
+other = "Expertise :"
+
+[readAlso]
+other = "À lire aussi"
+
+[previous]
+other = "Précédent"
+
+[next]
+other = "Suivant"
+
+[editorial]
+other = "La rédaction"
+
+[ourAuthors]
+other = "Nos auteurs"
+
+[authorsIntro]
+other = "La rédaction du comparateur : box internet, forfaits mobiles, réseaux, opérateurs et offres pro."
+
+[author]
+other = "Auteur"
+
+[theirArticles]
+other = "Ses articles"
+
+[authorsLink]
+other = "Auteurs"
+
+[rssFeed]
+other = "Flux RSS"
+
+[joinCommunity]
+other = "Rejoignez la communauté"
+
+[newsletterPitch]
+other = "Les nouvelles offres des opérateurs, les hausses à venir et nos comparatifs, chaque semaine dans votre boîte mail."
+
+[emailLabel]
+other = "Votre adresse e-mail"
+
+[emailPlaceholder]
+other = "prenom@entreprise.fr"
+
+[send]
+other = "Envoyer"
+
+[allRights]
+other = "tous droits réservés."
+
+[madeIn]
+other = "fait à Paris"
+
+[ctaTitle]
+other = "Ne ratez aucune bonne offre"
+
+[ctaText]
+other = "Comparatifs, hausses de prix et bons plans box et mobile, chaque semaine dans votre boîte mail."
+
+[notFoundTitle]
+other = "Oups ! Cette page est introuvable"
+
+[notFoundText]
+other = "La page que vous cherchez n'existe pas, ou elle a été déplacée. Retournez à l'accueil ou explorez le média."
+
+[backHome]
+other = "Retour à l'accueil"
+
+[breadcrumbAria]
+other = "Fil d'Ariane"
+
+[mainNavAria]
+other = "Navigation principale"
+
+[openMenu]
+other = "Ouvrir le menu"
+
+[scrollTop]
+other = "Remonter en haut de page"
+
+[sitemapLink]
+other = "Plan du site"
+
+[searchLabel]
+other = "Rechercher sur le site"
+
+[searchShort]
+other = "Rechercher"
+
+[searchAria]
+other = "Recherche dans les articles"
+
+[searchPlaceholder]
+other = "Un sujet, un outil, une rubrique..."
+
+[searchClose]
+other = "Fermer la recherche"
+
+[searchNoResults]
+other = "Aucun article ne correspond à cette recherche."
+
+[searchOneResult]
+other = "1 article trouvé"
+
+[searchManyResults]
+other = "%d articles trouvés"
+
+[searchError]
+other = "Recherche momentanément indisponible."
+
+[searchHint]
+other = "Naviguez avec les flèches, Entrée pour ouvrir, Échap pour fermer."

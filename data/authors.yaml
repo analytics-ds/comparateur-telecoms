@@ -1,0 +1,114 @@
+# Auteurs : Comparateur Télécoms
+# Indexe par ID (slug), utilise dans le frontmatter : author: antoine-lefevre + auteurs: ["antoine-lefevre"]
+
+antoine-lefevre:
+  id: antoine-lefevre
+  name: Antoine Lefèvre
+  type: person
+  avatar: /images/authors/antoine-lefevre.svg
+  linkedinUrl: ""
+  jobTitle:
+    fr: Rédacteur en chef, spécialiste des opérateurs
+  role:
+    fr: Rédacteur en chef, spécialiste des opérateurs
+  bio:
+    fr: "Antoine suit le marché des télécoms français depuis douze ans. Il décortique les grilles tarifaires des opérateurs, leurs hausses au 13e mois et leurs conditions cachées, pour dire simplement quelle offre vaut le coup."
+  expertise:
+    - Opérateurs télécoms
+    - Grilles tarifaires
+    - Régulation ARCEP
+    - Marché français
+  topics: [operateurs, free, orange, sfr, bouygues, arcep, prix]
+
+camille-roux:
+  id: camille-roux
+  name: Camille Roux
+  type: person
+  avatar: /images/authors/camille-roux.svg
+  linkedinUrl: ""
+  jobTitle:
+    fr: Journaliste box internet et fibre
+  role:
+    fr: Journaliste box internet et fibre
+  bio:
+    fr: "Camille teste les box internet chez elle et chez les autres : débits réels, Wi-Fi, décodeurs TV, service client. Elle compare ce qui est facturé à ce qui est livré."
+  expertise:
+    - Box internet
+    - Fibre optique
+    - Wi-Fi 6 et Wi-Fi 7
+    - TV et services inclus
+  topics: [box, fibre, wifi, freebox, livebox, bbox, tv]
+
+mehdi-saidi:
+  id: mehdi-saidi
+  name: Mehdi Saïdi
+  type: person
+  avatar: /images/authors/mehdi-saidi.svg
+  linkedinUrl: ""
+  jobTitle:
+    fr: Spécialiste réseaux mobiles et mesures
+  role:
+    fr: Spécialiste réseaux mobiles et mesures
+  bio:
+    fr: "Ingénieur télécoms de formation, Mehdi lit les campagnes de mesure de l'ARCEP et les baromètres nPerf comme d'autres lisent les résultats sportifs. Couverture, débits, latence : il traduit les chiffres en usages."
+  expertise:
+    - Réseaux mobiles
+    - 4G et 5G
+    - Mesures ARCEP et nPerf
+    - Couverture
+  topics: [reseau, 5g, couverture, arcep, nperf, debit, latence]
+
+julie-perrin:
+  id: julie-perrin
+  name: Julie Perrin
+  type: person
+  avatar: /images/authors/julie-perrin.svg
+  linkedinUrl: ""
+  jobTitle:
+    fr: Rédactrice forfaits mobiles et bons plans
+  role:
+    fr: Rédactrice forfaits mobiles et bons plans
+  bio:
+    fr: "Julie traque les forfaits mobiles qui tiennent leur prix dans le temps. Elle sait ce que cachent les promotions à durée limitée et les enveloppes de data qui ne servent à rien."
+  expertise:
+    - Forfaits mobiles
+    - Sans engagement
+    - Roaming
+    - eSIM
+  topics: [forfait, mobile, sans-engagement, roaming, esim, prix]
+
+nicolas-garnier:
+  id: nicolas-garnier
+  name: Nicolas Garnier
+  type: person
+  avatar: /images/authors/nicolas-garnier.svg
+  linkedinUrl: ""
+  jobTitle:
+    fr: Consultant télécoms pour les TPE et PME
+  role:
+    fr: Consultant télécoms pour les TPE et PME
+  bio:
+    fr: "Nicolas accompagne des petites entreprises dans le choix de leur box, de leurs lignes fixes et de leurs forfaits. Il compare les offres pro sur ce qui compte vraiment : la continuité de service, la téléphonie et le prix HT réel."
+  expertise:
+    - Offres pro
+    - Téléphonie d'entreprise
+    - Continuité de service
+    - Flottes mobiles
+  topics: [pro, tpe, pme, entreprise, telephonie, ip-fixe]
+
+la-redaction:
+  id: la-redaction
+  name: La rédaction
+  type: organization
+  avatar: /images/authors/la-redaction.svg
+  linkedinUrl: ""
+  jobTitle:
+    fr: Rédaction
+  role:
+    fr: Rédaction
+  bio:
+    fr: "Les articles signés La rédaction sont écrits collectivement par l'équipe du comparateur, à partir des grilles tarifaires publiques des opérateurs et des mesures de l'ARCEP."
+  expertise:
+    - Comparatifs
+    - Guides pratiques
+  topics: [comparatif, guide]

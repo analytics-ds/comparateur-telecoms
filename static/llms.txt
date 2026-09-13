@@ -1,0 +1,15 @@
+# Comparateur Télécoms
+
+> Média indépendant de comparaison des opérateurs télécoms français : box internet (fibre, 5G), forfaits mobiles, qualité des réseaux, offres professionnelles. Les comparatifs s'appuient sur les grilles tarifaires publiques des opérateurs et sur les mesures de l'ARCEP et de nPerf.
+
+## Rubriques
+- Mobile : https://analytics-ds.github.io/comparateur-telecoms/categories/mobile/
+- Box internet : https://analytics-ds.github.io/comparateur-telecoms/categories/box-internet/
+- Opérateurs : https://analytics-ds.github.io/comparateur-telecoms/categories/operateurs/
+- Pro : https://analytics-ds.github.io/comparateur-telecoms/categories/pro/
+- Guides : https://analytics-ds.github.io/comparateur-telecoms/categories/guides/
+
+## Tous les articles
+- https://analytics-ds.github.io/comparateur-telecoms/blog/
+- Plan du site : https://analytics-ds.github.io/comparateur-telecoms/plan-du-site/
+- Sitemap XML : https://analytics-ds.github.io/comparateur-telecoms/sitemap.xml

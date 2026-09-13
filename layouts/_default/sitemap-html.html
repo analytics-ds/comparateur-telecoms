@@ -1,0 +1,57 @@
+{{ define "main" }}
+<div class="wrap">
+  <nav class="breadcrumb" aria-label="{{ i18n "breadcrumbAria" }}">
+    <ol>
+      <li><a href="{{ "/" | relLangURL }}">{{ i18n "home" }}</a>
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 4 10 8 6 12"/></svg></li>
+      <li><span aria-current="page">{{ .Title }}</span></li>
+    </ol>
+  </nav>
+</div>
+<header class="page-head">
+  <div class="wrap">
+    <span class="eyebrow">{{ i18n "theMedia" }}</span>
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+  </div>
+</header>
+<section class="section">
+  <div class="wrap plan">
+    <div class="plan-col">
+      <h2>{{ i18n "rubriques" }}</h2>
+      <ul>
+        {{ range .Site.Menus.main }}<li><a href="{{ .URL }}">{{ .Name }}</a></li>{{ end }}
+        <li><a href="{{ "categories/" | relLangURL }}">{{ i18n "ourRubriques" }}</a></li>
+        <li><a href="{{ "tags/" | relLangURL }}">{{ i18n "allTopics" }}</a></li>
+        <li><a href="{{ "auteurs/" | relLangURL }}">{{ i18n "ourAuthors" }}</a></li>
+        <li><a href="{{ "blog/" | relLangURL }}">{{ i18n "allArticles" }}</a></li>
+      </ul>
+    </div>
+    <div class="plan-col">
+      <h2>{{ i18n "ourAuthors" }}</h2>
+      <ul>
+        {{ range $name, $taxonomy := .Site.Taxonomies.auteurs }}
+          {{ $a := index hugo.Data.authors $name }}
+          {{ with $a }}<li><a href="{{ printf "auteurs/%s/" .id | relLangURL }}">{{ .name }}</a> <span class="plan-date">{{ i18n "articleCount" (len $taxonomy) }}</span></li>{{ end }}
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+  <div class="wrap">
+    {{ range $catName, $catPages := .Site.Taxonomies.categories }}
+    {{ $term := $.Site.GetPage (printf "categories/%s" $catName) }}
+    <div class="plan-section">
+      <h2>{{ with $term }}{{ .Title }}{{ else }}{{ $catName }}{{ end }}</h2>
+      <ul class="plan-list">
+        {{ range $catPages.Pages.ByDate.Reverse }}
+        <li>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          <span class="plan-date">{{ .Lastmod | time.Format ":date_medium" }}</span>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

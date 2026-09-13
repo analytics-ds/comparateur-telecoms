@@ -1,0 +1,33 @@
+{{ define "main" }}
+<div class="wrap">
+  <nav class="breadcrumb" aria-label="{{ i18n "breadcrumbAria" }}">
+    <ol>
+      <li><a href="{{ "/" | relLangURL }}">{{ i18n "home" }}</a>
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 4 10 8 6 12"/></svg></li>
+      <li><span aria-current="page">{{ .Title }}</span></li>
+    </ol>
+  </nav>
+</div>
+
+{{ $eyebrow := i18n "theMedia" }}
+{{ if eq .Kind "term" }}{{ if eq .Data.Plural "tags" }}{{ $eyebrow = i18n "topics" }}{{ else }}{{ $eyebrow = i18n "rubrique" }}{{ end }}{{ end }}
+<header class="page-head">
+  <div class="wrap">
+    <span class="eyebrow">{{ $eyebrow }}</span>
+    <h1>{{ if eq .Kind "section" }}{{ i18n "allArticles" }}{{ else }}{{ .Title }}{{ end }}</h1>
+    <p>{{ with .Description }}{{ . }}{{ else }}{{ i18n "articlesToExplore" (len .Pages) }}{{ end }}</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap">
+    {{ $pages := .Pages.ByDate.Reverse }}
+    {{ if eq .Kind "section" }}{{ $pages = (where site.RegularPages "Section" "blog").ByDate.Reverse }}{{ end }}
+    {{ $paginator := .Paginate $pages }}
+    <div class="card-grid">
+      {{ range $paginator.Pages }}{{ partial "card.html" . }}{{ end }}
+    </div>
+    {{ partial "pagination.html" . }}
+  </div>
+</section>
+{{ end }}

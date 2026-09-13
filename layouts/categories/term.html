@@ -1,0 +1,92 @@
+{{ define "main" }}
+<div class="wrap">
+  <nav class="breadcrumb" aria-label="{{ i18n "breadcrumbAria" }}">
+    <ol>
+      <li><a href="{{ "/" | relLangURL }}">{{ i18n "home" }}</a>
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 4 10 8 6 12"/></svg></li>
+      <li><span aria-current="page">{{ .Title }}</span></li>
+    </ol>
+  </nav>
+</div>
+
+{{ $eyebrow := i18n "rubrique" }}
+{{ if eq .Data.Plural "tags" }}{{ $eyebrow = i18n "topics" }}{{ end }}
+<header class="page-head">
+  <div class="wrap arch-head">
+    <div class="arch-head-main">
+      <div>
+        <span class="eyebrow">{{ $eyebrow }}</span>
+        <h1>{{ .Title }}</h1>
+      </div>
+      <div class="arch-count"><strong>{{ len .Pages }}</strong>{{ i18n "articleCount" (len .Pages) | replaceRE "^[0-9]+ " "" }}</div>
+    </div>
+    <div class="arch-head-side" aria-hidden="true"></div>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap archive-layout">
+    <div>
+      {{ $paginator := .Paginate .Pages.ByDate.Reverse }}
+      <div class="arch-list">
+        {{ range $paginator.Pages }}
+        {{ $author := "" }}{{ with .Params.author }}{{ $author = index hugo.Data.authors . }}{{ end }}
+        <article class="arch-item">
+          <a class="arch-thumb" href="{{ .RelPermalink }}" tabindex="-1" aria-hidden="true">
+            {{ with .Params.image }}<img src="{{ . | relURL }}" alt="" loading="lazy" width="460" height="340">{{ end }}
+          </a>
+          <div class="arch-body">
+            <div class="card-pills">
+              {{ range first 1 .Params.categories }}{{ partial "pill.html" . }}{{ end }}
+            </div>
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            <p>{{ .Description | default (.Summary | plainify | truncate 140) }}</p>
+            <div class="meta">
+              {{ with $author }}
+                {{ partial "avatar.html" (dict "author" . "class" "avatar") }}
+                <a href="{{ printf "auteurs/%s/" .id | relLangURL }}">{{ .name }}</a>
+              {{ end }}
+              {{ partial "clock.html" . }}
+            </div>
+          </div>
+        </article>
+        {{ end }}
+      </div>
+      {{ partial "pagination.html" . }}
+    </div>
+
+    <aside class="archive-side">
+      {{ $current := .RelPermalink }}
+      {{ $pageSet := .Pages }}
+      {{ $more := first 5 (where (where site.RegularPages "Section" "blog").ByDate.Reverse "Params.categories" "ne" nil) }}
+      {{ $others := slice }}
+      {{ range (where site.RegularPages "Section" "blog").ByDate.Reverse }}
+        {{ if and (lt (len $others) 5) (not (in $pageSet .)) }}{{ $others = $others | append . }}{{ end }}
+      {{ end }}
+      {{ if $others }}
+      <div class="more-articles">
+        <div class="sidebar-title">{{ i18n "moreArticles" }}</div>
+        {{ $lead := index $others 0 }}
+        {{ with $lead }}
+        <a class="more-lead dcard" href="{{ .RelPermalink }}">
+          <span class="dcard-bg">{{ with .Params.image }}<img src="{{ . | relURL }}" alt="" loading="lazy">{{ end }}</span>
+          <span class="dcard-content">
+            <span class="card-pills">{{ range first 1 .Params.categories }}<span class="pill pill-{{ . | urlize }}"><span class="pill-dot"></span>{{ . }}</span>{{ end }}</span>
+            <h3>{{ .Title }}</h3>
+            {{ partial "clock.html" . }}
+          </span>
+        </a>
+        {{ end }}
+        {{ range after 1 $others }}
+        <a class="more-item" href="{{ .RelPermalink }}">
+          <span class="card-pills">{{ range first 1 .Params.categories }}<span class="pill pill-{{ . | urlize }}"><span class="pill-dot"></span>{{ . }}</span>{{ end }}</span>
+          <h4>{{ .Title }}</h4>
+          {{ partial "clock.html" . }}
+        </a>
+        {{ end }}
+      </div>
+      {{ end }}
+    </aside>
+  </div>
+</section>
+{{ end }}

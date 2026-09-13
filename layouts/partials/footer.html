@@ -1,0 +1,49 @@
+<footer class="site-footer" id="newsletter">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="brand-name">{{ .Site.Params.brand }}<span class="brand-dot">.</span></span>
+        <p>{{ .Site.Params.description }}</p>
+      </div>
+      <div class="footer-col">
+        <h4>{{ i18n "rubriques" }}</h4>
+        {{ range .Site.Menus.main }}<a href="{{ .URL }}">{{ .Name }}</a>{{ end }}
+      </div>
+      <div class="footer-col">
+        <h4>{{ i18n "theMedia" }}</h4>
+        <a href="{{ "blog/" | relLangURL }}">{{ i18n "allArticles" }}</a>
+        <a href="{{ "auteurs/" | relLangURL }}">{{ i18n "editorial" }}</a>
+        <a href="{{ "categories/" | relLangURL }}">{{ i18n "rubriques" }}</a>
+        <a href="{{ "tags/" | relLangURL }}">{{ i18n "topics" }}</a>
+        <a href="{{ "index.xml" | relLangURL }}">{{ i18n "rssFeed" }}</a>
+        <a href="{{ (cond (eq .Site.Language.Lang "fr") "plan-du-site/" "site-map/") | relLangURL }}">{{ i18n "sitemapLink" }}</a>
+      </div>
+      <div class="footer-col newsletter">
+        <h4>{{ i18n "joinCommunity" }}</h4>
+        <p>{{ i18n "newsletterPitch" }}</p>
+        <form onsubmit="return false">
+          <label for="nl-email">{{ i18n "emailLabel" }}</label>
+          <input id="nl-email" type="email" name="email" placeholder="{{ i18n "emailPlaceholder" }}" autocomplete="email">
+          <button class="btn" type="submit">{{ i18n "send" }}</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© {{ now.Year }} {{ .Site.Params.brand }}, {{ i18n "allRights" }}</span>
+      <span>{{ .Site.Params.tagline }}, {{ i18n "madeIn" }}</span>
+    </div>
+  </div>
+<!-- pbn-legal:start -->
+<div class="footer-legal">
+    <ul>
+        {{- $lg := .Site.Language.Lang }}
+        {{- $map := dict "fr" (slice (slice "mentions-legales/" "Mentions légales") (slice "politique-de-confidentialite/" "Politique de confidentialité") (slice "cgu/" "CGU")) "en" (slice (slice "legal-notice/" "Legal notice") (slice "privacy-policy/" "Privacy policy") (slice "terms-of-service/" "Terms of use")) }}
+        {{- $items := index $map $lg }}
+        {{- if not $items }}{{ $items = index $map "fr" }}{{ end }}
+        {{- range $items }}
+        <li><a href="{{ (index . 0) | relLangURL }}">{{ index . 1 }}</a></li>
+        {{- end }}
+    </ul>
+</div>
+<!-- pbn-legal:end -->
+</footer>

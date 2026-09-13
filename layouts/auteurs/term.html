@@ -1,0 +1,37 @@
+{{ define "main" }}
+{{ $lang := .Site.Language.Lang }}
+{{ $slug := .Data.Term | default .Title }}
+{{ $a := index hugo.Data.authors $slug }}
+<div class="wrap">
+  <nav class="breadcrumb" aria-label="{{ i18n "breadcrumbAria" }}">
+    <ol>
+      <li><a href="{{ "/" | relLangURL }}">{{ i18n "home" }}</a>
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 4 10 8 6 12"/></svg></li>
+      <li><a href="{{ "auteurs/" | relLangURL }}">{{ i18n "authorsLink" }}</a>
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 4 10 8 6 12"/></svg></li>
+      <li><span aria-current="page">{{ with $a }}{{ .name }}{{ else }}{{ $slug }}{{ end }}</span></li>
+    </ol>
+  </nav>
+</div>
+<header class="wrap author-hero">
+  {{ with $a }}
+    {{ partial "avatar.html" (dict "author" . "class" "") }}
+    <div>
+      <span class="eyebrow">{{ i18n "author" }}</span>
+      <h1 style="margin-top:10px">{{ .name }}</h1>
+      <div class="a-role">{{ index .role $lang | default (index .role "fr") }}</div>
+      <p class="a-bio">{{ index .bio $lang | default (index .bio "fr") }}</p>
+    </div>
+  {{ else }}
+    <div><h1>{{ $slug }}</h1></div>
+  {{ end }}
+</header>
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><h2 style="font-size:26px">{{ i18n "theirArticles" }}</h2></div>
+    <div class="card-grid">
+      {{ range .Pages.ByDate.Reverse }}{{ partial "card.html" . }}{{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

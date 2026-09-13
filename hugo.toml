@@ -1,0 +1,84 @@
+baseURL = "https://analytics-ds.github.io/comparateur-telecoms/"
+defaultContentLanguage = "fr"
+defaultContentLanguageInSubdir = false
+title = "Comparateur Télécoms"
+enableRobotsTXT = true
+enableEmoji = true
+capitalizeListTitles = false
+removePathAccents = true
+summaryLength = 24
+
+[pagination]
+  pagerSize = 9
+
+[params]
+  brand = "comparateur télécoms"
+
+[languages]
+  [languages.fr]
+    locale = "fr-FR"
+    label = "Français"
+    weight = 1
+    title = "Comparateur Télécoms"
+    contentDir = "content/fr"
+    [languages.fr.params]
+      brandSuffix = "meilleur comparateur d'opérateurs télécoms en 2026"
+      tagline = "Meilleur comparateur d'opérateurs télécoms en 2026"
+      description = "Comparatifs, tests et guides sur les box internet, les forfaits mobiles et les opérateurs télécoms français : Free, Orange, SFR, Bouygues et leurs marques low cost. Le média indépendant des télécoms."
+      baseline = "Box internet, forfaits mobiles, réseaux, offres pro : tous les opérateurs comparés."
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[taxonomies]
+  categorie = "categories"
+  tag = "tags"
+  auteur = "auteurs"
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+    ordered = false
+  [markup.highlight]
+    noClasses = false
+
+[related]
+  includeNewer = true
+  threshold = 40
+  toLower = true
+  [[related.indices]]
+    name = "categories"
+    weight = 100
+  [[related.indices]]
+    name = "tags"
+    weight = 60
+
+# ---- Menus FR ----
+[[languages.fr.menus.main]]
+  name = "Mobile"
+  pageRef = "/categories/mobile"
+  weight = 10
+[[languages.fr.menus.main]]
+  name = "Box internet"
+  pageRef = "/categories/box-internet"
+  weight = 20
+[[languages.fr.menus.main]]
+  name = "Opérateurs"
+  pageRef = "/categories/opérateurs"
+  weight = 30
+[[languages.fr.menus.main]]
+  name = "Pro"
+  pageRef = "/categories/pro"
+  weight = 40
+[[languages.fr.menus.main]]
+  name = "Guides"
+  pageRef = "/categories/guides"
+  weight = 50

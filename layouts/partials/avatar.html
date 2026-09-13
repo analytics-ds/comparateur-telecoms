@@ -1,0 +1,9 @@
+{{/* Reçoit un dict {author: <données auteur>, class: "..."} */}}
+{{ $a := .author }}{{ $class := .class }}
+{{ with $a }}
+  {{ with .avatar }}
+    <img src="{{ . | relURL }}" alt="{{ $a.name }}" class="{{ $class }}" loading="lazy" width="88" height="88">
+  {{ else }}
+    <span class="{{ $class }} avatar-ph" aria-hidden="true">{{ substr .name 0 1 }}</span>
+  {{ end }}
+{{ end }}

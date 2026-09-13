@@ -1,0 +1,36 @@
+{{ define "main" }}
+<div class="wrap">
+  <nav class="breadcrumb" aria-label="{{ i18n "breadcrumbAria" }}">
+    <ol>
+      <li><a href="{{ "/" | relLangURL }}">{{ i18n "home" }}</a>
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 4 10 8 6 12"/></svg></li>
+      <li><span aria-current="page">{{ i18n "rubriques" }}</span></li>
+    </ol>
+  </nav>
+</div>
+<header class="page-head">
+  <div class="wrap">
+    <span class="eyebrow">{{ i18n "theMedia" }}</span>
+    <h1>{{ i18n "ourRubriques" }}</h1>
+    <p>{{ i18n "browseByTheme" }}</p>
+  </div>
+</header>
+<section class="section">
+  <div class="wrap">
+    <div class="card-grid">
+      {{ range .Data.Terms.ByCount }}
+      {{ $lead := index (.Pages.ByDate.Reverse) 0 }}
+      <article class="card">
+        <a class="card-cover" href="{{ .Page.RelPermalink }}" tabindex="-1" aria-hidden="true">
+          {{ with $lead.Params.image }}<img src="{{ . | relURL }}" alt="" loading="lazy">{{ end }}
+        </a>
+        <div class="card-body">
+          <div class="card-meta"><span class="card-cat">{{ i18n "rubrique" }}</span><span class="card-date">{{ i18n "articleCount" .Count }}</span></div>
+          <h3><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></h3>
+        </div>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

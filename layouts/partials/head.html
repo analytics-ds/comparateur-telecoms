@@ -1,0 +1,61 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{ $title := .Title }}
+{{ $isHome := .IsHome }}
+{{ $fullTitle := cond $isHome (printf "%s | %s" .Site.Title .Site.Params.tagline) (printf "%s | %s" $title .Site.Title) }}
+<title>{{ $fullTitle }}</title>
+{{ $desc := or .Description .Site.Params.description }}
+<meta name="description" content="{{ $desc }}">
+<link rel="canonical" href="{{ .Permalink }}">
+{{/* pbn-legal-noindex */}}{{- if .Params.noindex }}<meta name="robots" content="noindex, follow">{{ else }}<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">{{ end }}
+
+{{/* Open Graph */}}
+{{ $ogImg := "images/og-default.png" | absURL }}
+{{ with .Params.image }}{{ $ogImg = . | absURL }}{{ end }}
+<meta property="og:type" content="{{ cond .IsPage "article" "website" }}">
+<meta property="og:title" content="{{ $fullTitle }}">
+<meta property="og:description" content="{{ $desc }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:locale" content="{{ cond (eq .Site.Language.Lang "fr") "fr_FR" "en_US" }}">
+{{ range .Translations }}<meta property="og:locale:alternate" content="{{ cond (eq .Language.Lang "fr") "fr_FR" "en_US" }}">{{ end }}
+<meta property="og:image" content="{{ $ogImg }}">
+<meta property="og:image:alt" content="{{ with .Params.imageAlt }}{{ . }}{{ else }}{{ $title }}{{ end }}">
+
+{{/* Article */}}
+{{ if and .IsPage (eq .Section "blog") }}
+<meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}">
+<meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" }}">
+{{ with .Params.author }}{{ with index hugo.Data.authors . }}<meta property="article:author" content="{{ .name }}">{{ end }}{{ end }}
+{{ with .Params.categories }}<meta property="article:section" content="{{ index . 0 }}">{{ end }}
+{{ range .Params.tags }}<meta property="article:tag" content="{{ . }}">{{ end }}
+{{ end }}
+
+{{/* Twitter */}}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ $fullTitle }}">
+<meta name="twitter:description" content="{{ $desc }}">
+<meta name="twitter:image" content="{{ $ogImg }}">
+
+{{/* Langues */}}
+{{ range .Translations }}<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">{{ end }}
+{{ if .IsTranslated }}<link rel="alternate" hreflang="{{ .Site.Language.Lang }}" href="{{ .Permalink }}">
+<link rel="alternate" hreflang="x-default" href="{{ with .Translations }}{{ range . }}{{ if eq .Language.Lang "fr" }}{{ .Permalink }}{{ end }}{{ end }}{{ end }}{{ if eq .Site.Language.Lang "fr" }}{{ .Permalink }}{{ end }}">{{ end }}
+
+{{/* Icones et theme */}}
+<link rel="icon" type="image/svg+xml" href="{{ "favicon.svg" | relURL }}">
+<link rel="apple-touch-icon" href="{{ "images/logo.png" | relURL }}">
+<meta name="theme-color" content="#0A0A0C">
+
+{{/* Polices non bloquantes */}}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+{{ $fonts := "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" }}
+<link rel="preload" as="style" href="{{ $fonts }}">
+<link rel="stylesheet" href="{{ $fonts }}" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="{{ $fonts }}"></noscript>
+
+<link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+{{ with .OutputFormats.Get "rss" }}<link rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" href="{{ .Permalink }}">{{ end }}
+
+{{ partial "schema.html" . }}

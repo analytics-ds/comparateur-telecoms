@@ -1,0 +1,67 @@
+<div class="topbar">
+  <div class="wrap topbar-inner">
+    <div class="topbar-left">
+      <span class="topbar-note">{{ i18n "topbarNote" }}</span>
+      <a class="topbar-pill" href="#newsletter">{{ i18n "getNewsletter" }}
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+    <div class="topbar-right">
+      <span class="topbar-badge">Paris</span>
+      <span class="topbar-date">{{ now | time.Format ":date_full" }}</span>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="{{ .Site.Home.RelPermalink }}" aria-label="{{ .Site.Title }}, {{ i18n "home" | lower }}">
+      <span class="brand-name">{{ .Site.Params.brand }}<span class="brand-dot">.</span></span>
+      <span class="brand-suffix">{{ .Site.Params.brandSuffix }}</span>
+    </a>
+    <nav class="main-nav" aria-label="{{ i18n "mainNavAria" }}">
+      {{ $current := .RelPermalink }}
+      {{ range .Site.Menus.main }}
+        <a href="{{ .URL }}" {{ if and .URL (hasPrefix $current .URL) }}class="is-active"{{ end }}>{{ .Name }}</a>
+      {{ end }}
+    </nav>
+    <div class="header-right">
+      <button class="search-toggle" type="button" aria-label="{{ i18n "searchLabel" }}" title="{{ i18n "searchLabel" }}">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
+        <span class="search-toggle-text">{{ i18n "searchShort" }}</span>
+      </button>
+      {{/* Switch de langue : lien vers la traduction si elle existe, sinon vers la home de l'autre langue */}}
+      {{ $page := . }}
+      <div class="lang-switch" aria-label="Langue">
+        {{ range hugo.Sites }}
+          {{ $lang := .Language.Lang }}
+          {{ if eq $lang $page.Language.Lang }}
+            <span class="lang-item is-current">{{ $lang | upper }}</span>
+          {{ else }}
+            {{ $target := .Home.RelPermalink }}
+            {{ range $page.Translations }}{{ if eq .Language.Lang $lang }}{{ $target = .RelPermalink }}{{ end }}{{ end }}
+            <a class="lang-item" href="{{ $target }}">{{ $lang | upper }}</a>
+          {{ end }}
+        {{ end }}
+      </div>
+      <button class="nav-toggle" aria-label="{{ i18n "openMenu" }}">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+{{ if .IsHome }}
+{{ $latest := first 6 (where site.RegularPages "Section" "blog").ByDate.Reverse }}
+<div class="ticker" aria-hidden="true">
+  <div class="wrap ticker-inner">
+    <span class="ticker-badge">{{ i18n "tickerBadge" }}</span>
+    <div class="ticker-track">
+      <div class="ticker-list">
+        {{ range $latest }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
+        {{ range $latest }}<a href="{{ .RelPermalink }}" tabindex="-1">{{ .Title }}</a>{{ end }}
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}

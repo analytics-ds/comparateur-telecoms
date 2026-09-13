@@ -1,0 +1,63 @@
+{{- /* robots.txt genere par Hugo (enableRobotsTXT). Politique : tout ouvert, crawlers IA explicitement autorises (strategie GEO). */ -}}
+# {{ .Site.Title }} - {{ .Site.Params.tagline }}
+
+User-agent: *
+Allow: /
+
+# Moteurs generatifs et crawlers IA : acces explicitement autorise
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+
+# Sitemap (index : renvoie vers les sitemaps FR et EN)
+Sitemap: {{ "sitemap.xml" | absURL }}
+
+# Guide de contenu pour les modeles de langage
+# {{ "llms.txt" | absURL }}

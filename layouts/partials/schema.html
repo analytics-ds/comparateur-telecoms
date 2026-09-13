@@ -1,0 +1,162 @@
+{{- /* Donnees structurees JSON-LD en @graph unique. Genere par /seo-setup, adapte au site. */ -}}
+{{- $base := .Site.BaseURL -}}
+{{- $orgId := printf "%s#organization" $base -}}
+{{- $webId := printf "%s#website" $base -}}
+{{- $lang := .Site.Language.Lang -}}
+{{- $logo := "images/logo.png" | absURL -}}
+{{- $defaultOg := "images/og-default.png" | absURL -}}
+
+{{- $org := dict
+  "@type" "Organization"
+  "@id" $orgId
+  "name" .Site.Title
+  "alternateName" .Site.Params.tagline
+  "url" $base
+  "description" .Site.Params.description
+  "logo" (dict "@type" "ImageObject" "url" $logo "width" 512 "height" 512)
+  "image" $logo
+  "foundingDate" "2026"
+  "knowsAbout" (slice "SEO" "Generative Engine Optimization" "Marketing de contenu" "Social media" "Publicite en ligne" "Web analytics")
+-}}
+
+{{- $web := dict
+  "@type" "WebSite"
+  "@id" $webId
+  "url" $base
+  "name" .Site.Title
+  "description" .Site.Params.description
+  "inLanguage" $lang
+  "publisher" (dict "@id" $orgId)
+-}}
+
+{{- $graph := slice $org $web -}}
+
+{{- /* ---------- Article ---------- */ -}}
+{{- if and .IsPage (eq .Section "blog") -}}
+  {{- $a := "" -}}{{- with .Params.author -}}{{- $a = index hugo.Data.authors . -}}{{- end -}}
+  {{- $authorNode := dict -}}
+  {{- $authorRef := dict "@id" $orgId -}}
+  {{- with $a -}}
+    {{- $aUrl := printf "auteurs/%s/" .id | absURL -}}
+    {{- $aId := printf "%s#person" $aUrl -}}
+    {{- $authorRef = dict "@id" $aId -}}
+    {{- $authorNode = dict
+      "@type" (cond (eq .type "organization") "Organization" "Person")
+      "@id" $aId
+      "name" .name
+      "url" $aUrl
+      "jobTitle" (index .role $lang | default (index .role "fr"))
+      "description" (index .bio $lang | default (index .bio "fr"))
+      "knowsAbout" .expertise
+      "image" (.avatar | absURL)
+      "worksFor" (dict "@id" $orgId)
+    -}}
+    {{- $graph = $graph | append $authorNode -}}
+  {{- end -}}
+
+  {{- $img := $defaultOg -}}
+  {{- with .Params.image -}}{{- $img = . | absURL -}}{{- end -}}
+  {{- $article := dict
+    "@type" "BlogPosting"
+    "@id" (printf "%s#article" .Permalink)
+    "isPartOf" (dict "@id" $webId)
+    "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink)
+    "headline" .Title
+    "description" (.Description | default .Summary)
+    "url" .Permalink
+    "datePublished" (.Date.Format "2006-01-02T15:04:05-07:00")
+    "dateModified" (.Lastmod.Format "2006-01-02T15:04:05-07:00")
+    "author" $authorRef
+    "publisher" (dict "@id" $orgId)
+    "image" (dict "@type" "ImageObject" "url" $img "caption" (.Params.imageAlt | default .Title))
+    "inLanguage" $lang
+    "wordCount" .WordCount
+    "timeRequired" (printf "PT%dM" .ReadingTime)
+  -}}
+  {{- with .Params.categories -}}{{- $article = merge $article (dict "articleSection" (index . 0)) -}}{{- end -}}
+  {{- with .Params.tags -}}{{- $article = merge $article (dict "keywords" (delimit . ", ")) -}}{{- end -}}
+  {{- $graph = $graph | append $article -}}
+
+  {{- /* FAQPage depuis le frontmatter faq */ -}}
+  {{- with .Params.faq -}}
+    {{- $qs := slice -}}
+    {{- range . -}}
+      {{- $qs = $qs | append (dict
+        "@type" "Question"
+        "name" .question
+        "acceptedAnswer" (dict "@type" "Answer" "text" .answer)
+      ) -}}
+    {{- end -}}
+    {{- $graph = $graph | append (dict
+      "@type" "FAQPage"
+      "@id" (printf "%s#faq" $.Permalink)
+      "isPartOf" (dict "@id" $webId)
+      "inLanguage" $lang
+      "mainEntity" $qs
+    ) -}}
+  {{- end -}}
+
+  {{- /* BreadcrumbList */ -}}
+  {{- $items := slice (dict "@type" "ListItem" "position" 1 "name" (i18n "home") "item" ("" | absLangURL)) -}}
+  {{- with .Params.categories -}}
+    {{- $c := index . 0 -}}
+    {{- $items = $items | append (dict "@type" "ListItem" "position" 2 "name" $c "item" (printf "categories/%s/" (urlize $c) | absLangURL)) -}}
+    {{- $items = $items | append (dict "@type" "ListItem" "position" 3 "name" $.Title "item" $.Permalink) -}}
+  {{- else -}}
+    {{- $items = $items | append (dict "@type" "ListItem" "position" 2 "name" .Title "item" .Permalink) -}}
+  {{- end -}}
+  {{- $graph = $graph | append (dict "@type" "BreadcrumbList" "@id" (printf "%s#breadcrumb" .Permalink) "itemListElement" $items) -}}
+{{- end -}}
+
+{{- /* ---------- Page auteur ---------- */ -}}
+{{- if and (eq .Kind "term") (eq .Data.Plural "auteurs") -}}
+  {{- $slug := .Data.Term | default .Title -}}
+  {{- $a := index hugo.Data.authors $slug -}}
+  {{- with $a -}}
+    {{- $aUrl := printf "auteurs/%s/" .id | absURL -}}
+    {{- $person := dict
+      "@type" (cond (eq .type "organization") "Organization" "Person")
+      "@id" (printf "%s#person" $aUrl)
+      "name" .name
+      "url" $aUrl
+      "jobTitle" (index .role $lang | default (index .role "fr"))
+      "description" (index .bio $lang | default (index .bio "fr"))
+      "knowsAbout" .expertise
+      "image" (.avatar | absURL)
+      "worksFor" (dict "@id" $orgId)
+    -}}
+    {{- $graph = $graph | append $person -}}
+    {{- $graph = $graph | append (dict
+      "@type" "ProfilePage"
+      "@id" (printf "%s#profile" $.Permalink)
+      "url" $.Permalink
+      "name" .name
+      "isPartOf" (dict "@id" $webId)
+      "mainEntity" (dict "@id" (printf "%s#person" $aUrl))
+      "inLanguage" $lang
+    ) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* ---------- Pages de liste (rubriques, sujets, blog) ---------- */ -}}
+{{- if or (eq .Kind "section") (and (eq .Kind "term") (ne .Data.Plural "auteurs")) (eq .Kind "taxonomy") -}}
+  {{- $els := slice -}}
+  {{- range $i, $p := first 12 .Pages -}}
+    {{- $els = $els | append (dict "@type" "ListItem" "position" (add $i 1) "url" $p.Permalink "name" $p.Title) -}}
+  {{- end -}}
+  {{- $graph = $graph | append (dict
+    "@type" "CollectionPage"
+    "@id" (printf "%s#collection" .Permalink)
+    "url" .Permalink
+    "name" .Title
+    "description" (.Description | default .Site.Params.description)
+    "isPartOf" (dict "@id" $webId)
+    "inLanguage" $lang
+    "mainEntity" (dict "@type" "ItemList" "numberOfItems" (len .Pages) "itemListElement" $els)
+  ) -}}
+  {{- $crumbs := slice (dict "@type" "ListItem" "position" 1 "name" (i18n "home") "item" ("" | absLangURL)) -}}
+  {{- $crumbs = $crumbs | append (dict "@type" "ListItem" "position" 2 "name" .Title "item" .Permalink) -}}
+  {{- $graph = $graph | append (dict "@type" "BreadcrumbList" "@id" (printf "%s#breadcrumb" .Permalink) "itemListElement" $crumbs) -}}
+{{- end -}}
+
+<script type="application/ld+json">{{ (dict "@context" "https://schema.org" "@graph" $graph) | jsonify (dict "indent" "") | safeJS }}</script>

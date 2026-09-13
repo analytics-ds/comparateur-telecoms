@@ -1,0 +1,24 @@
+{{- /* Index de recherche client-side, un fichier par langue (/index.json et /en/index.json) */ -}}
+{{- $items := slice -}}
+{{- range (where site.RegularPages "Section" "blog").ByDate.Reverse -}}
+  {{- $cats := .Params.categories -}}{{- if not $cats }}{{ $cats = slice }}{{ end -}}
+  {{- $tags := .Params.tags -}}{{- if not $tags }}{{ $tags = slice }}{{ end -}}
+  {{- $author := "" -}}
+  {{- with .Params.author }}{{ with index hugo.Data.authors . }}{{ $author = .name }}{{ end }}{{ end -}}
+  {{- $img := "" -}}
+  {{- with .Params.image }}{{ $img = . | relURL }}{{ end -}}
+  {{- $desc := .Description -}}
+  {{- if not $desc }}{{ $desc = .Summary | plainify | truncate 180 "" }}{{ end -}}
+  {{- $items = $items | append (dict
+      "t" .Title
+      "u" .RelPermalink
+      "d" $desc
+      "c" $cats
+      "g" $tags
+      "a" $author
+      "i" $img
+      "dt" (.Date | time.Format ":date_medium")
+      "x" (.Plain | truncate 2000 "")
+  ) -}}
+{{- end -}}
+{{- dict "lang" site.Language.Lang "count" (len $items) "items" $items | jsonify -}}

@@ -1,0 +1,39 @@
+{{ define "main" }}
+{{ $lang := .Site.Language.Lang }}
+<div class="wrap">
+  <nav class="breadcrumb" aria-label="{{ i18n "breadcrumbAria" }}">
+    <ol>
+      <li><a href="{{ "/" | relLangURL }}">{{ i18n "home" }}</a>
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 4 10 8 6 12"/></svg></li>
+      <li><span aria-current="page">{{ i18n "authorsLink" }}</span></li>
+    </ol>
+  </nav>
+</div>
+<header class="page-head">
+  <div class="wrap">
+    <span class="eyebrow">{{ i18n "editorial" }}</span>
+    <h1>{{ i18n "ourAuthors" }}</h1>
+    <p>{{ i18n "authorsIntro" }}</p>
+  </div>
+</header>
+<section class="section">
+  <div class="wrap">
+    <div class="authors-grid">
+      {{ range .Data.Terms.ByCount }}
+        {{ $a := index hugo.Data.authors .Name }}
+        {{ $count := .Count }}
+        {{ $url := .Page.RelPermalink }}
+        {{ with $a }}
+        <a class="author-card" href="{{ $url }}">
+          {{ partial "avatar.html" (dict "author" . "class" "") }}
+          <h3>{{ .name }}</h3>
+          <div class="a-role">{{ index .role $lang | default (index .role "fr") }}</div>
+          <p class="a-bio">{{ index .bio $lang | default (index .bio "fr") | truncate 130 }}</p>
+          <div class="a-count">{{ i18n "articleCount" $count }}</div>
+        </a>
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

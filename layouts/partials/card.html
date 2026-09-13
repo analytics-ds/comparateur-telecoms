@@ -1,0 +1,21 @@
+{{/* Carte article standard. Contexte = une Page. */}}
+{{ $author := "" }}{{ with .Params.author }}{{ $author = index hugo.Data.authors . }}{{ end }}
+<article class="card">
+  <a class="card-cover" href="{{ .RelPermalink }}" tabindex="-1" aria-hidden="true">
+    {{ with .Params.image }}<img src="{{ . | relURL }}" alt="" loading="lazy" width="640" height="400">{{ end }}
+  </a>
+  <div class="card-body">
+    <div class="card-pills">
+      {{ range first 1 .Params.categories }}{{ partial "pill.html" . }}{{ end }}
+    </div>
+    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    <p>{{ .Description | default (.Summary | plainify | truncate 110) }}</p>
+    <div class="meta">
+      {{ with $author }}
+        {{ partial "avatar.html" (dict "author" . "class" "avatar") }}
+        <a href="{{ printf "auteurs/%s/" .id | relLangURL }}">{{ .name }}</a>
+      {{ end }}
+      {{ partial "clock.html" . }}
+    </div>
+  </div>
+</article>

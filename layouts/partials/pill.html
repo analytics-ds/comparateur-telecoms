@@ -1,0 +1,2 @@
+{{/* Pill de catégorie. Contexte = nom de catégorie (string). */}}
+<a class="pill pill-{{ . | urlize }}" href="{{ printf "categories/%s/" (. | urlize) | relLangURL }}"><span class="pill-dot"></span>{{ . }}</a>
