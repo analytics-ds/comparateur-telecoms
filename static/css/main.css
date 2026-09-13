@@ -627,3 +627,44 @@ body.search-open { overflow: hidden; }
 .footer-legal li{margin:0}
 .footer-legal a{font-size:.85rem;opacity:.75;text-decoration:none}
 .footer-legal a:hover{opacity:1;text-decoration:underline}
+
+/* =========================================================
+   Surcharges Comparateur Télécoms (2026-09-13)
+   Palette marine + teal + corail, header sur une ligne, hero clair
+   ========================================================= */
+:root {
+  --primary:   #0E9F8E;
+  --primary-2: #0B7F72;
+  --red:       #FF5A36;
+  --bluebar-1: #0B2545;
+  --bluebar-2: #13315C;
+  --cream:     #EEF8F6;
+  --dark:      #0B2545;
+  --dark-2:    #13315C;
+  --p-mobile-bg: #E0F5F1;      --p-mobile-tx: #0B7F72;
+  --p-box-bg: #E4EDFE;         --p-box-tx: #1D4ED8;
+  --p-operateurs-bg: #FFEAE3;  --p-operateurs-tx: #C2410C;
+  --p-pro-bg: #EDE9FE;         --p-pro-tx: #5B21B6;
+  --p-guides-bg: #FEF3C7;      --p-guides-tx: #92400E;
+}
+.header-inner { gap: 28px; }
+.brand { flex: 0 0 auto; align-items: center; }
+.brand-name { font-size: 22px; white-space: nowrap; }
+.brand-dot { color: var(--primary); }
+.site-header .brand-suffix { display: none; }
+.main-nav { flex: 1; justify-content: center; }
+.main-nav a { white-space: nowrap; }
+.topbar-pill { background: var(--primary); }
+.topbar-badge { background: var(--red); }
+.hero { background: linear-gradient(180deg, var(--cream) 0%, #fff 100%); color: var(--ink); }
+.hero-main { border-radius: var(--radius); box-shadow: var(--shadow); min-height: 440px; }
+.hero-main::after { background: linear-gradient(180deg, rgba(11,37,69,0) 25%, rgba(11,37,69,.6) 60%, rgba(11,37,69,.94) 100%); }
+.hero-side-title { color: var(--ink); }
+.hero-side-title::after { color: var(--primary); }
+.trend { background: #fff; border: 1px solid var(--line); box-shadow: var(--shadow); }
+.trend:hover { background: var(--cream); }
+.trend h3 { color: var(--ink); }
+.trend .clock { color: var(--muted); }
+.trend-thumb { flex: 0 0 84px; height: 66px; }
+.dcard::after { background: linear-gradient(180deg, rgba(11,37,69,.05) 25%, rgba(11,37,69,.92) 100%); }
+.hero-side-title::after, .section-title::after, .sec-title::after { color: var(--primary); }
