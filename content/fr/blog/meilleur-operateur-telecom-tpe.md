@@ -1,5 +1,6 @@
 ---
 title: "Quel opérateur télécom choisir pour une TPE ou une PME en 2026 ?"
+translationKey: "meilleur-operateur-telecom-tpe"
 date: "2026-07-15T09:00:00+02:00"
 lastmod: "2026-09-13T09:00:00+02:00"
 description: "Freebox Pro, SFR Business, Orange Pro, Bouygues Pro : comparatif 2026 des box fibre pro et des forfaits mobiles pour les petites entreprises, avec les prix HT et les services inclus."

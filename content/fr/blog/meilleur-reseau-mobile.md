@@ -1,5 +1,6 @@
 ---
 title: "Quel opérateur a le meilleur réseau mobile en France en 2026 ?"
+translationKey: "meilleur-reseau-mobile"
 date: "2026-08-05T09:00:00+02:00"
 lastmod: "2026-09-13T09:00:00+02:00"
 description: "Orange, Bouygues Telecom, SFR ou Free : qui a le meilleur réseau mobile en 2026 ? Analyse des mesures ARCEP 2025 et du baromètre nPerf sur la 4G, la 5G, la couverture et la latence."

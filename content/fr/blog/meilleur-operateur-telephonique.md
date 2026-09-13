@@ -1,5 +1,6 @@
 ---
 title: "Quel est le meilleur opérateur téléphonique français en 2026 ?"
+translationKey: "meilleur-operateur-telephonique"
 date: "2026-09-02T09:00:00+02:00"
 lastmod: "2026-09-13T09:00:00+02:00"
 description: "Free, Orange, SFR ou Bouygues Telecom : comparatif 2026 des quatre opérateurs français sur les prix, le réseau, la satisfaction client et les offres box et mobile."

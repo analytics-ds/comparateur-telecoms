@@ -1,5 +1,6 @@
 ---
 title: "Freebox ou Livebox : laquelle est la meilleure en 2026 ?"
+translationKey: "freebox-ou-livebox"
 date: "2026-08-12T09:00:00+02:00"
 lastmod: "2026-09-13T09:00:00+02:00"
 description: "Freebox Pop, Ultra ou Livebox Fibre, Max : comparatif 2026 des box de Free et d'Orange sur le prix sur 24 mois, le Wi-Fi 7, les répéteurs, la TV et le streaming inclus."

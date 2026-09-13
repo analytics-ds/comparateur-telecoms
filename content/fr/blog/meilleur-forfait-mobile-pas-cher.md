@@ -1,5 +1,6 @@
 ---
 title: "Meilleur forfait mobile pas cher en 2026 : le comparatif"
+translationKey: "meilleur-forfait-mobile-pas-cher"
 date: "2026-09-06T09:00:00+02:00"
 lastmod: "2026-09-13T09:00:00+02:00"
 description: "Free, B&You, RED, Sosh : comparatif 2026 des forfaits mobiles pas chers, de 2 euros à 20 euros par mois, avec la 5G, la data en Europe et les pièges des promotions."

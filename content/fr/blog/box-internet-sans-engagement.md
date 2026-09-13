@@ -1,5 +1,6 @@
 ---
 title: "Box internet sans engagement : quelle offre choisir en 2026 ?"
+translationKey: "box-internet-sans-engagement"
 date: "2026-08-26T09:00:00+02:00"
 lastmod: "2026-09-13T09:00:00+02:00"
 description: "Freebox, RED Box, SFR Premium : le comparatif 2026 des box internet fibre sans engagement, avec les prix, les hausses au 13e mois et les frais à prévoir."

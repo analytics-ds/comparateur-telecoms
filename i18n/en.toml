@@ -1,0 +1,190 @@
+[skipToContent]
+other = "Skip to content"
+
+[topbarNote]
+other = "Boxes, plans and operators compared, no jargon"
+
+[getNewsletter]
+other = "Get the newsletter"
+
+[tickerBadge]
+other = "Don't miss"
+
+[trends]
+other = "Trending"
+
+[editorsPicks]
+other = "Editors' picks"
+
+[seeMore]
+other = "See more"
+
+[home]
+other = "Home"
+
+[theMedia]
+other = "The media"
+
+[rubrique]
+other = "Section"
+
+[rubriques]
+other = "Sections"
+
+[ourRubriques]
+other = "Our sections"
+
+[browseByTheme]
+other = "Browse the media by theme."
+
+[allTopics]
+other = "All topics"
+
+[browseByTopic]
+other = "Browse the media by specific topic."
+
+[topics]
+other = "Topics"
+
+[allArticles]
+other = "All articles"
+
+[articlesToExplore]
+one = "{{ .Count }} article to explore."
+other = "{{ .Count }} articles to explore."
+
+[articleCount]
+one = "{{ .Count }} article"
+other = "{{ .Count }} articles"
+
+[minRead]
+other = "min read"
+
+[by]
+other = "By"
+
+[share]
+other = "Share"
+
+[summary]
+other = "Contents"
+
+[moreArticles]
+other = "More articles"
+
+[aboutAuthor]
+other = "About the author"
+
+[expertiseLabel]
+other = "Expertise:"
+
+[readAlso]
+other = "Also read"
+
+[previous]
+other = "Previous"
+
+[next]
+other = "Next"
+
+[editorial]
+other = "The editorial team"
+
+[ourAuthors]
+other = "Our authors"
+
+[authorsIntro]
+other = "The editorial team: internet boxes, mobile plans, networks, operators and business offers."
+
+[author]
+other = "Author"
+
+[theirArticles]
+other = "Their articles"
+
+[authorsLink]
+other = "Authors"
+
+[rssFeed]
+other = "RSS feed"
+
+[joinCommunity]
+other = "Join the community"
+
+[newsletterPitch]
+other = "New operator offers, upcoming price increases and our comparisons, every week in your inbox."
+
+[emailLabel]
+other = "Your email address"
+
+[emailPlaceholder]
+other = "name@company.com"
+
+[send]
+other = "Send"
+
+[allRights]
+other = "all rights reserved."
+
+[madeIn]
+other = "made in Paris"
+
+[ctaTitle]
+other = "Never miss a good deal"
+
+[ctaText]
+other = "Comparisons, price increases and box and mobile deals, every week in your inbox."
+
+[notFoundTitle]
+other = "Oops! This page cannot be found"
+
+[notFoundText]
+other = "The page you are looking for does not exist, or it has been moved. Go back home or explore the media."
+
+[backHome]
+other = "Back to home"
+
+[breadcrumbAria]
+other = "Breadcrumb"
+
+[mainNavAria]
+other = "Main navigation"
+
+[openMenu]
+other = "Open menu"
+
+[scrollTop]
+other = "Back to top"
+
+[sitemapLink]
+other = "Site map"
+
+[searchLabel]
+other = "Search the site"
+
+[searchShort]
+other = "Search"
+
+[searchAria]
+other = "Search the articles"
+
+[searchPlaceholder]
+other = "A topic, a tool, a section..."
+
+[searchClose]
+other = "Close search"
+
+[searchNoResults]
+other = "No article matches this search."
+
+[searchOneResult]
+other = "1 article found"
+
+[searchManyResults]
+other = "%d articles found"
+
+[searchError]
+other = "Search temporarily unavailable."
+
+[searchHint]
+other = "Use the arrow keys, Enter to open, Esc to close."

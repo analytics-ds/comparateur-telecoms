@@ -1,5 +1,6 @@
 ---
 title: "Free ou Orange : quel opérateur choisir en 2026 ?"
+translationKey: "free-ou-orange"
 date: "2026-08-19T09:00:00+02:00"
 lastmod: "2026-09-13T09:00:00+02:00"
 description: "Free ou Orange pour la box et le mobile : comparatif 2026 des prix, du réseau, de l'engagement, des services inclus et de la satisfaction client des deux opérateurs."

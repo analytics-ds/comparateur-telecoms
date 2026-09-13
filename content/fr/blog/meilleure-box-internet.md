@@ -1,5 +1,6 @@
 ---
 title: "Meilleure box internet 2026 : le comparatif des offres fibre"
+translationKey: "meilleure-box-internet"
 date: "2026-09-04T09:00:00+02:00"
 lastmod: "2026-09-13T09:00:00+02:00"
 description: "Freebox, Livebox, Bbox, SFR Box, RED : comparatif 2026 des box internet fibre sur le prix réel sur 24 mois, le débit, le Wi-Fi, la TV et l'engagement."

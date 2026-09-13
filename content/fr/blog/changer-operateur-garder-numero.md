@@ -1,5 +1,6 @@
 ---
 title: "Comment changer d'opérateur mobile en gardant son numéro ?"
+translationKey: "changer-operateur-garder-numero"
 date: "2026-07-22T09:00:00+02:00"
 lastmod: "2026-09-13T09:00:00+02:00"
 description: "Code RIO, 3179, portabilité en 3 jours, résiliation automatique : la procédure complète pour changer d'opérateur mobile sans perdre son numéro ni subir de coupure."

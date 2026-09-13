@@ -1,5 +1,6 @@
 ---
 title: "Box 5G ou fibre : que choisir quand la fibre n'est pas disponible ?"
+translationKey: "box-5g-ou-fibre"
 date: "2026-07-29T09:00:00+02:00"
 lastmod: "2026-09-13T09:00:00+02:00"
 description: "Box 5G Free, RED, SFR, Bouygues, Orange : comparatif 2026 des box 5G, leurs prix, leurs débits réels et les cas où elles remplacent la fibre ou l'ADSL."

@@ -27,6 +27,18 @@ summaryLength = 24
       description = "Comparatifs, tests et guides sur les box internet, les forfaits mobiles et les opérateurs télécoms français : Free, Orange, SFR, Bouygues et leurs marques low cost. Le média indépendant des télécoms."
       baseline = "Box internet, forfaits mobiles, réseaux, offres pro : tous les opérateurs comparés."
 
+  [languages.en]
+    locale = "en-US"
+    label = "English"
+    weight = 2
+    title = "Comparateur Télécoms"
+    contentDir = "content/en"
+    [languages.en.params]
+      brandSuffix = "the best French telecom operator comparison site in 2026"
+      tagline = "The best French telecom operator comparison site in 2026"
+      description = "Comparisons, tests and guides on French internet boxes, mobile plans and telecom operators: Free, Orange, SFR, Bouygues and their low-cost brands. The independent telecom media."
+      baseline = "Internet boxes, mobile plans, networks, business offers: every French operator compared."
+
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
@@ -79,6 +91,28 @@ summaryLength = 24
   pageRef = "/categories/pro"
   weight = 40
 [[languages.fr.menus.main]]
+  name = "Guides"
+  pageRef = "/categories/guides"
+  weight = 50
+
+# ---- Menus EN ----
+[[languages.en.menus.main]]
+  name = "Mobile"
+  pageRef = "/categories/mobile"
+  weight = 10
+[[languages.en.menus.main]]
+  name = "Internet boxes"
+  pageRef = "/categories/internet-boxes"
+  weight = 20
+[[languages.en.menus.main]]
+  name = "Operators"
+  pageRef = "/categories/operators"
+  weight = 30
+[[languages.en.menus.main]]
+  name = "Business"
+  pageRef = "/categories/business"
+  weight = 40
+[[languages.en.menus.main]]
   name = "Guides"
   pageRef = "/categories/guides"
   weight = 50

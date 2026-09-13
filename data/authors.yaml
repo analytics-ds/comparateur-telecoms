@@ -8,10 +8,13 @@ antoine-lefevre:
   avatar: images/authors/antoine-lefevre.svg
   linkedinUrl: ""
   jobTitle:
+    en: "Editor-in-chief, operator specialist"
     fr: Rédacteur en chef, spécialiste des opérateurs
   role:
+    en: "Editor-in-chief, operator specialist"
     fr: Rédacteur en chef, spécialiste des opérateurs
   bio:
+    en: "Antoine has followed the French telecom market for twelve years. He dissects operators' price lists, their 13th-month increases and hidden conditions to say plainly which offer is worth it."
     fr: "Antoine suit le marché des télécoms français depuis douze ans. Il décortique les grilles tarifaires des opérateurs, leurs hausses au 13e mois et leurs conditions cachées, pour dire simplement quelle offre vaut le coup."
   expertise:
     - Opérateurs télécoms
@@ -27,10 +30,13 @@ camille-roux:
   avatar: images/authors/camille-roux.svg
   linkedinUrl: ""
   jobTitle:
+    en: "Internet box and fibre journalist"
     fr: Journaliste box internet et fibre
   role:
+    en: "Internet box and fibre journalist"
     fr: Journaliste box internet et fibre
   bio:
+    en: "Camille tests internet boxes at home and elsewhere: real speeds, Wi-Fi, TV decoders, customer service. She compares what is billed with what is delivered."
     fr: "Camille teste les box internet chez elle et chez les autres : débits réels, Wi-Fi, décodeurs TV, service client. Elle compare ce qui est facturé à ce qui est livré."
   expertise:
     - Box internet
@@ -46,10 +52,13 @@ mehdi-saidi:
   avatar: images/authors/mehdi-saidi.svg
   linkedinUrl: ""
   jobTitle:
+    en: "Mobile networks and measurements specialist"
     fr: Spécialiste réseaux mobiles et mesures
   role:
+    en: "Mobile networks and measurements specialist"
     fr: Spécialiste réseaux mobiles et mesures
   bio:
+    en: "A telecom engineer by training, Mehdi reads ARCEP measurement campaigns and nPerf barometers the way others read sports results. Coverage, speeds, latency: he turns figures into everyday use."
     fr: "Ingénieur télécoms de formation, Mehdi lit les campagnes de mesure de l'ARCEP et les baromètres nPerf comme d'autres lisent les résultats sportifs. Couverture, débits, latence : il traduit les chiffres en usages."
   expertise:
     - Réseaux mobiles
@@ -65,10 +74,13 @@ julie-perrin:
   avatar: images/authors/julie-perrin.svg
   linkedinUrl: ""
   jobTitle:
+    en: "Mobile plans and deals writer"
     fr: Rédactrice forfaits mobiles et bons plans
   role:
+    en: "Mobile plans and deals writer"
     fr: Rédactrice forfaits mobiles et bons plans
   bio:
+    en: "Julie tracks mobile plans that hold their price over time. She knows what limited-time promotions and useless data allowances really hide."
     fr: "Julie traque les forfaits mobiles qui tiennent leur prix dans le temps. Elle sait ce que cachent les promotions à durée limitée et les enveloppes de data qui ne servent à rien."
   expertise:
     - Forfaits mobiles
@@ -84,10 +96,13 @@ nicolas-garnier:
   avatar: images/authors/nicolas-garnier.svg
   linkedinUrl: ""
   jobTitle:
+    en: "Telecom consultant for small businesses"
     fr: Consultant télécoms pour les TPE et PME
   role:
+    en: "Telecom consultant for small businesses"
     fr: Consultant télécoms pour les TPE et PME
   bio:
+    en: "Nicolas helps small companies choose their box, landlines and mobile plans. He compares business offers on what really matters: service continuity, telephony and the real price excluding VAT."
     fr: "Nicolas accompagne des petites entreprises dans le choix de leur box, de leurs lignes fixes et de leurs forfaits. Il compare les offres pro sur ce qui compte vraiment : la continuité de service, la téléphonie et le prix HT réel."
   expertise:
     - Offres pro
@@ -103,10 +118,13 @@ la-redaction:
   avatar: images/authors/la-redaction.svg
   linkedinUrl: ""
   jobTitle:
+    en: "Editorial team"
     fr: Rédaction
   role:
+    en: "Editorial team"
     fr: Rédaction
   bio:
+    en: "Articles signed by the editorial team are written collectively, from operators' public price lists and ARCEP measurements."
     fr: "Les articles signés La rédaction sont écrits collectivement par l'équipe du comparateur, à partir des grilles tarifaires publiques des opérateurs et des mesures de l'ARCEP."
   expertise:
     - Comparatifs

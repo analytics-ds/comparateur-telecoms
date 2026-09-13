@@ -668,3 +668,22 @@ body.search-open { overflow: hidden; }
 .trend-thumb { flex: 0 0 84px; height: 66px; }
 .dcard::after { background: linear-gradient(180deg, rgba(11,37,69,.05) 25%, rgba(11,37,69,.92) 100%); }
 .hero-side-title::after, .section-title::after, .sec-title::after { color: var(--primary); }
+
+/* Recherche plus large, hero sur fond teal, pills EN, mobile */
+.search-toggle { min-width: 260px; justify-content: flex-start; padding: 10px 16px; }
+.hero { background: linear-gradient(135deg, #0E9F8E 0%, #0B7F72 55%, #0B2545 100%); color: #fff; }
+.hero-side-title { color: #fff; }
+.hero-side-title::after { color: #FFD166; }
+.pill-internet-boxes { background: var(--p-box-bg); color: var(--p-box-tx); }
+.pill-operators { background: var(--p-operateurs-bg); color: var(--p-operateurs-tx); }
+.pill-business { background: var(--p-pro-bg); color: var(--p-pro-tx); }
+@media (max-width: 900px) {
+  .search-toggle { min-width: 0; }
+  .brand-name { font-size: 20px; }
+  .hero-main { min-height: 360px; }
+}
+@media (max-width: 900px) {
+  .search-toggle { width: 42px; height: 42px; min-width: 42px; padding: 0; justify-content: center; border-radius: 50%; }
+  .search-toggle svg { width: 19px; height: 19px; }
+  .prose table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; white-space: nowrap; }
+}

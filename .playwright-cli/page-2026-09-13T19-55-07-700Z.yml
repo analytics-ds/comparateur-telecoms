@@ -1,0 +1,383 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]: Boxes, plans and operators compared, no jargon
+      - link "Get the newsletter" [ref=e7] [cursor=pointer]:
+        - /url: "#newsletter"
+        - text: Get the newsletter
+        - img [ref=e8]
+    - generic [ref=e10]:
+      - generic [ref=e11]: Paris
+      - generic [ref=e12]: Sunday, September 13, 2026
+  - banner [ref=e13]:
+    - generic [ref=e14]:
+      - link "Comparateur Télécoms, home" [ref=e15] [cursor=pointer]:
+        - /url: /en/
+        - generic [ref=e16]: comparateur télécoms.
+      - navigation "Main navigation" [ref=e17]:
+        - link "Mobile" [ref=e18] [cursor=pointer]:
+          - /url: /en/categories/mobile/
+        - link "Internet boxes" [ref=e19] [cursor=pointer]:
+          - /url: /en/categories/internet-boxes/
+        - link "Operators" [ref=e20] [cursor=pointer]:
+          - /url: /en/categories/operators/
+        - link "Business" [ref=e21] [cursor=pointer]:
+          - /url: /en/categories/business/
+        - link "Guides" [ref=e22] [cursor=pointer]:
+          - /url: /en/categories/guides/
+      - generic [ref=e23]:
+        - button "Search the site" [ref=e24] [cursor=pointer]:
+          - img [ref=e25]
+          - generic [ref=e28]: Search
+        - generic "Langue" [ref=e29]:
+          - link "FR" [ref=e30] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e31]: EN
+  - generic [ref=e33]:
+    - generic [ref=e34]: Don't miss
+    - generic [ref=e36]:
+      - link [ref=e37] [cursor=pointer]:
+        - /url: /en/blog/best-cheap-mobile-plan/
+        - text: "Best cheap mobile plan in France in 2026: the comparison"
+      - link [ref=e38] [cursor=pointer]:
+        - /url: /en/blog/best-internet-box/
+        - text: "Best internet box 2026: the fibre offers compared"
+      - link [ref=e39] [cursor=pointer]:
+        - /url: /en/blog/best-french-mobile-operator/
+        - text: Which is the best French telecom operator in 2026?
+      - link [ref=e40] [cursor=pointer]:
+        - /url: /en/blog/contract-free-internet-box/
+        - text: "Contract-free internet box: which offer to choose in 2026?"
+      - link [ref=e41] [cursor=pointer]:
+        - /url: /en/blog/free-or-orange/
+        - text: "Free or Orange: which operator to choose in 2026?"
+      - link [ref=e42] [cursor=pointer]:
+        - /url: /en/blog/freebox-or-livebox/
+        - text: "Freebox or Livebox: which is better in 2026?"
+      - link [ref=e43] [cursor=pointer]:
+        - /url: /en/blog/best-cheap-mobile-plan/
+        - text: "Best cheap mobile plan in France in 2026: the comparison"
+      - link [ref=e44] [cursor=pointer]:
+        - /url: /en/blog/best-internet-box/
+        - text: "Best internet box 2026: the fibre offers compared"
+      - link [ref=e45] [cursor=pointer]:
+        - /url: /en/blog/best-french-mobile-operator/
+        - text: Which is the best French telecom operator in 2026?
+      - link [ref=e46] [cursor=pointer]:
+        - /url: /en/blog/contract-free-internet-box/
+        - text: "Contract-free internet box: which offer to choose in 2026?"
+      - link [ref=e47] [cursor=pointer]:
+        - /url: /en/blog/free-or-orange/
+        - text: "Free or Orange: which operator to choose in 2026?"
+      - link [ref=e48] [cursor=pointer]:
+        - /url: /en/blog/freebox-or-livebox/
+        - text: "Freebox or Livebox: which is better in 2026?"
+  - main [ref=e49]:
+    - generic [ref=e51]:
+      - article [ref=e52]:
+        - generic [ref=e54]:
+          - link "Mobile" [ref=e56] [cursor=pointer]:
+            - /url: /en/categories/mobile/
+            - text: Mobile
+          - 'heading "Best cheap mobile plan in France in 2026: the comparison" [level=1] [ref=e58]':
+            - 'link "Best cheap mobile plan in France in 2026: the comparison" [ref=e59] [cursor=pointer]':
+              - /url: /en/blog/best-cheap-mobile-plan/
+          - paragraph [ref=e60]: "Free, B&You, RED, Sosh: 2026 comparison of cheap French mobile plans, from 2 to 20 euros per month, with 5G, data in Europe and the traps of promotions."
+          - generic [ref=e61]:
+            - img "Julie Perrin" [ref=e62]
+            - link "Julie Perrin" [ref=e63] [cursor=pointer]:
+              - /url: /en/auteurs/julie-perrin/
+            - generic [ref=e64]:
+              - img [ref=e65]
+              - text: 6 min read
+      - complementary [ref=e68]:
+        - generic [ref=e69]: Trending ❯
+        - 'link "Best internet box 2026: the fibre offers compared 7 min read" [ref=e70] [cursor=pointer]':
+          - /url: /en/blog/best-internet-box/
+          - generic [ref=e72]:
+            - 'heading "Best internet box 2026: the fibre offers compared" [level=3] [ref=e73]'
+            - generic [ref=e74]:
+              - img [ref=e75]
+              - text: 7 min read
+        - link "Which is the best French telecom operator in 2026? 7 min read" [ref=e78] [cursor=pointer]:
+          - /url: /en/blog/best-french-mobile-operator/
+          - generic [ref=e80]:
+            - heading "Which is the best French telecom operator in 2026?" [level=3] [ref=e81]
+            - generic [ref=e82]:
+              - img [ref=e83]
+              - text: 7 min read
+        - 'link "Contract-free internet box: which offer to choose in 2026? 6 min read" [ref=e86] [cursor=pointer]':
+          - /url: /en/blog/contract-free-internet-box/
+          - generic [ref=e88]:
+            - 'heading "Contract-free internet box: which offer to choose in 2026?" [level=3] [ref=e89]'
+            - generic [ref=e90]:
+              - img [ref=e91]
+              - text: 6 min read
+    - navigation "Sections" [ref=e95]:
+      - link "Mobile 2 articles" [ref=e96] [cursor=pointer]:
+        - /url: /en/categories/mobile/
+        - generic [ref=e98]: Mobile
+        - generic [ref=e99]: 2 articles
+      - link "Internet boxes 4 articles" [ref=e100] [cursor=pointer]:
+        - /url: /en/categories/internet-boxes/
+        - generic [ref=e102]: Internet boxes
+        - generic [ref=e103]: 4 articles
+      - link "Operators 2 articles" [ref=e104] [cursor=pointer]:
+        - /url: /en/categories/operators/
+        - generic [ref=e106]: Operators
+        - generic [ref=e107]: 2 articles
+      - link "Business 1 article" [ref=e108] [cursor=pointer]:
+        - /url: /en/categories/business/
+        - generic [ref=e110]: Business
+        - generic [ref=e111]: 1 article
+      - link "Guides 1 article" [ref=e112] [cursor=pointer]:
+        - /url: /en/categories/guides/
+        - generic [ref=e114]: Guides
+        - generic [ref=e115]: 1 article
+    - generic [ref=e117]:
+      - generic [ref=e118]:
+        - heading "Editors' picks ❯" [level=2] [ref=e119]
+        - link "See more" [ref=e120] [cursor=pointer]:
+          - /url: /en/blog/
+          - text: See more
+          - img [ref=e121]
+      - generic [ref=e123]:
+        - article [ref=e124]:
+          - link [ref=e125] [cursor=pointer]:
+            - /url: /en/blog/free-or-orange/
+          - generic [ref=e126]:
+            - link "Operators" [ref=e128] [cursor=pointer]:
+              - /url: /en/categories/operators/
+              - text: Operators
+            - 'heading "Free or Orange: which operator to choose in 2026?" [level=3] [ref=e130]':
+              - 'link "Free or Orange: which operator to choose in 2026?" [ref=e131] [cursor=pointer]':
+                - /url: /en/blog/free-or-orange/
+            - paragraph [ref=e132]: "Free or Orange for your box and mobile: 2026 comparison of prices, network, commitment, included services and customer satisfaction of the two French operators."
+            - generic [ref=e133]:
+              - img "Antoine Lefèvre" [ref=e134]
+              - link "Antoine Lefèvre" [ref=e135] [cursor=pointer]:
+                - /url: /en/auteurs/antoine-lefevre/
+              - generic [ref=e136]:
+                - img [ref=e137]
+                - text: 5 min read
+        - article [ref=e140]:
+          - link [ref=e141] [cursor=pointer]:
+            - /url: /en/blog/freebox-or-livebox/
+          - generic [ref=e142]:
+            - link "Internet boxes" [ref=e144] [cursor=pointer]:
+              - /url: /en/categories/internet-boxes/
+              - text: Internet boxes
+            - 'heading "Freebox or Livebox: which is better in 2026?" [level=3] [ref=e146]':
+              - 'link "Freebox or Livebox: which is better in 2026?" [ref=e147] [cursor=pointer]':
+                - /url: /en/blog/freebox-or-livebox/
+            - paragraph [ref=e148]: "Freebox Pop, Ultra or Livebox Fibre, Max: 2026 comparison of Free's and Orange's boxes on 24-month cost, Wi-Fi 7, repeaters, TV and included streaming."
+            - generic [ref=e149]:
+              - img "Camille Roux" [ref=e150]
+              - link "Camille Roux" [ref=e151] [cursor=pointer]:
+                - /url: /en/auteurs/camille-roux/
+              - generic [ref=e152]:
+                - img [ref=e153]
+                - text: 5 min read
+        - article [ref=e156]:
+          - link [ref=e157] [cursor=pointer]:
+            - /url: /en/blog/best-mobile-network-france/
+          - generic [ref=e158]:
+            - link "Mobile" [ref=e160] [cursor=pointer]:
+              - /url: /en/categories/mobile/
+              - text: Mobile
+            - heading "Which operator has the best mobile network in France in 2026?" [level=3] [ref=e162]:
+              - link "Which operator has the best mobile network in France in 2026?" [ref=e163] [cursor=pointer]:
+                - /url: /en/blog/best-mobile-network-france/
+            - paragraph [ref=e164]: "Orange, Bouygues Telecom, SFR or Free: who has the best mobile network in France in 2026? Analysis of ARCEP 2025 measurements and the nPerf barometer on 4G, 5G, coverage and latency."
+            - generic [ref=e165]:
+              - img "Mehdi Saïdi" [ref=e166]
+              - link "Mehdi Saïdi" [ref=e167] [cursor=pointer]:
+                - /url: /en/auteurs/mehdi-saidi/
+              - generic [ref=e168]:
+                - img [ref=e169]
+                - text: 5 min read
+        - article [ref=e172]:
+          - link [ref=e173] [cursor=pointer]:
+            - /url: /en/blog/5g-box-or-fibre/
+          - generic [ref=e174]:
+            - link "Internet boxes" [ref=e176] [cursor=pointer]:
+              - /url: /en/categories/internet-boxes/
+              - text: Internet boxes
+            - 'heading "5G box or fibre: what to choose when fibre is not available?" [level=3] [ref=e178]':
+              - 'link "5G box or fibre: what to choose when fibre is not available?" [ref=e179] [cursor=pointer]':
+                - /url: /en/blog/5g-box-or-fibre/
+            - paragraph [ref=e180]: "Free, RED, SFR, Bouygues and Orange 5G boxes: 2026 comparison of French 5G home boxes, their prices, real speeds and the cases where they replace fibre or ADSL."
+            - generic [ref=e181]:
+              - img "Mehdi Saïdi" [ref=e182]
+              - link "Mehdi Saïdi" [ref=e183] [cursor=pointer]:
+                - /url: /en/auteurs/mehdi-saidi/
+              - generic [ref=e184]:
+                - img [ref=e185]
+                - text: 6 min read
+    - generic [ref=e189]:
+      - generic [ref=e190]:
+        - heading "Mobile ❯" [level=2] [ref=e191]
+        - link "See more" [ref=e192] [cursor=pointer]:
+          - /url: /en/categories/mobile/
+          - text: See more
+          - img [ref=e193]
+      - generic [ref=e195]:
+        - article [ref=e196]:
+          - link [ref=e197] [cursor=pointer]:
+            - /url: /en/blog/best-cheap-mobile-plan/
+          - generic [ref=e198]:
+            - link "Mobile" [ref=e200] [cursor=pointer]:
+              - /url: /en/categories/mobile/
+              - text: Mobile
+            - 'heading "Best cheap mobile plan in France in 2026: the comparison" [level=3] [ref=e202]':
+              - 'link "Best cheap mobile plan in France in 2026: the comparison" [ref=e203] [cursor=pointer]':
+                - /url: /en/blog/best-cheap-mobile-plan/
+            - paragraph [ref=e204]: "Free, B&You, RED, Sosh: 2026 comparison of cheap French mobile plans, from 2 to 20 euros per month, with 5G, data in Europe and the traps of promotions."
+            - generic [ref=e205]:
+              - img "Julie Perrin" [ref=e206]
+              - link "Julie Perrin" [ref=e207] [cursor=pointer]:
+                - /url: /en/auteurs/julie-perrin/
+              - generic [ref=e208]:
+                - img [ref=e209]
+                - text: 6 min read
+        - article [ref=e212]:
+          - link [ref=e213] [cursor=pointer]:
+            - /url: /en/blog/best-mobile-network-france/
+          - generic [ref=e214]:
+            - link "Mobile" [ref=e216] [cursor=pointer]:
+              - /url: /en/categories/mobile/
+              - text: Mobile
+            - heading "Which operator has the best mobile network in France in 2026?" [level=3] [ref=e218]:
+              - link "Which operator has the best mobile network in France in 2026?" [ref=e219] [cursor=pointer]:
+                - /url: /en/blog/best-mobile-network-france/
+            - paragraph [ref=e220]: "Orange, Bouygues Telecom, SFR or Free: who has the best mobile network in France in 2026? Analysis of ARCEP 2025 measurements and the nPerf barometer on 4G, 5G, coverage and latency."
+            - generic [ref=e221]:
+              - img "Mehdi Saïdi" [ref=e222]
+              - link "Mehdi Saïdi" [ref=e223] [cursor=pointer]:
+                - /url: /en/auteurs/mehdi-saidi/
+              - generic [ref=e224]:
+                - img [ref=e225]
+                - text: 5 min read
+    - generic [ref=e229]:
+      - generic [ref=e230]:
+        - heading "Internet boxes ❯" [level=2] [ref=e231]
+        - link "See more" [ref=e232] [cursor=pointer]:
+          - /url: /en/categories/internet-boxes/
+          - text: See more
+          - img [ref=e233]
+      - generic [ref=e235]:
+        - article [ref=e236]:
+          - generic [ref=e238]:
+            - link "Internet boxes" [ref=e240] [cursor=pointer]:
+              - /url: /en/categories/internet-boxes/
+              - text: Internet boxes
+            - 'heading "Best internet box 2026: the fibre offers compared" [level=3] [ref=e242]':
+              - 'link "Best internet box 2026: the fibre offers compared" [ref=e243] [cursor=pointer]':
+                - /url: /en/blog/best-internet-box/
+            - generic [ref=e244]:
+              - img [ref=e245]
+              - text: 7 min read
+        - generic [ref=e248]:
+          - article [ref=e249]:
+            - generic [ref=e251]:
+              - 'heading "Contract-free internet box: which offer to choose in 2026?" [level=3] [ref=e252]':
+                - 'link "Contract-free internet box: which offer to choose in 2026?" [ref=e253] [cursor=pointer]':
+                  - /url: /en/blog/contract-free-internet-box/
+              - generic [ref=e254]:
+                - img [ref=e255]
+                - text: 6 min read
+          - article [ref=e258]:
+            - generic [ref=e260]:
+              - 'heading "Freebox or Livebox: which is better in 2026?" [level=3] [ref=e261]':
+                - 'link "Freebox or Livebox: which is better in 2026?" [ref=e262] [cursor=pointer]':
+                  - /url: /en/blog/freebox-or-livebox/
+              - generic [ref=e263]:
+                - img [ref=e264]
+                - text: 5 min read
+    - generic [ref=e268]:
+      - generic [ref=e269]:
+        - heading "Operators ❯" [level=2] [ref=e270]
+        - link "See more" [ref=e271] [cursor=pointer]:
+          - /url: /en/categories/operators/
+          - text: See more
+          - img [ref=e272]
+      - generic [ref=e274]:
+        - link "Operators Which is the best French telecom operator in 2026? 7 min read" [ref=e275] [cursor=pointer]:
+          - /url: /en/blog/best-french-mobile-operator/
+          - generic [ref=e277]:
+            - generic [ref=e279]: Operators
+            - heading "Which is the best French telecom operator in 2026?" [level=3] [ref=e281]
+            - generic [ref=e282]:
+              - img [ref=e283]
+              - text: 7 min read
+        - 'link "Operators Free or Orange: which operator to choose in 2026? 5 min read" [ref=e286] [cursor=pointer]':
+          - /url: /en/blog/free-or-orange/
+          - generic [ref=e288]:
+            - generic [ref=e290]: Operators
+            - 'heading "Free or Orange: which operator to choose in 2026?" [level=3] [ref=e292]'
+            - generic [ref=e293]:
+              - img [ref=e294]
+              - text: 5 min read
+    - generic [ref=e299]:
+      - generic [ref=e300]:
+        - heading "Never miss a good deal" [level=2] [ref=e301]
+        - paragraph [ref=e302]: Comparisons, price increases and box and mobile deals, every week in your inbox.
+      - link "Get the newsletter" [ref=e303] [cursor=pointer]:
+        - /url: "#newsletter"
+        - text: Get the newsletter
+        - img [ref=e304]
+  - contentinfo [ref=e306]:
+    - generic [ref=e307]:
+      - generic [ref=e308]:
+        - generic [ref=e309]:
+          - generic [ref=e310]: comparateur télécoms.
+          - paragraph [ref=e311]: "Comparisons, tests and guides on French internet boxes, mobile plans and telecom operators: Free, Orange, SFR, Bouygues and their low-cost brands. The independent telecom media."
+        - generic [ref=e312]:
+          - heading "Sections" [level=4] [ref=e313]
+          - link "Mobile" [ref=e314] [cursor=pointer]:
+            - /url: /en/categories/mobile/
+          - link "Internet boxes" [ref=e315] [cursor=pointer]:
+            - /url: /en/categories/internet-boxes/
+          - link "Operators" [ref=e316] [cursor=pointer]:
+            - /url: /en/categories/operators/
+          - link "Business" [ref=e317] [cursor=pointer]:
+            - /url: /en/categories/business/
+          - link "Guides" [ref=e318] [cursor=pointer]:
+            - /url: /en/categories/guides/
+        - generic [ref=e319]:
+          - heading "The media" [level=4] [ref=e320]
+          - link "All articles" [ref=e321] [cursor=pointer]:
+            - /url: /en/blog/
+          - link "The editorial team" [ref=e322] [cursor=pointer]:
+            - /url: /en/auteurs/
+          - link "Sections" [ref=e323] [cursor=pointer]:
+            - /url: /en/categories/
+          - link "Topics" [ref=e324] [cursor=pointer]:
+            - /url: /en/tags/
+          - link "RSS feed" [ref=e325] [cursor=pointer]:
+            - /url: /en/index.xml
+          - link "Site map" [ref=e326] [cursor=pointer]:
+            - /url: /en/site-map/
+        - generic [ref=e327]:
+          - heading "Join the community" [level=4] [ref=e328]
+          - paragraph [ref=e329]: New operator offers, upcoming price increases and our comparisons, every week in your inbox.
+          - generic [ref=e330]:
+            - generic [ref=e331]: Your email address
+            - textbox "Your email address" [ref=e332]:
+              - /placeholder: name@company.com
+            - button "Send" [ref=e333] [cursor=pointer]
+      - generic [ref=e334]:
+        - generic [ref=e335]: © 2026 comparateur télécoms, all rights reserved.
+        - generic [ref=e336]: The best French telecom operator comparison site in 2026, made in Paris
+    - list [ref=e338]:
+      - listitem [ref=e339]:
+        - link "Legal notice" [ref=e340] [cursor=pointer]:
+          - /url: /en/legal-notice/
+      - listitem [ref=e341]:
+        - link "Privacy policy" [ref=e342] [cursor=pointer]:
+          - /url: /en/privacy-policy/
+      - listitem [ref=e343]:
+        - link "Terms of use" [ref=e344] [cursor=pointer]:
+          - /url: /en/terms-of-service/
