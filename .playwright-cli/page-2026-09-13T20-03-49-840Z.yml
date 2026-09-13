@@ -1,0 +1,219 @@
+- generic [active] [ref=e1]:
+  - link "Aller au contenu" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]: Box, forfaits et opérateurs comparés sans jargon
+      - link "Recevoir la newsletter" [ref=e7] [cursor=pointer]:
+        - /url: "#newsletter"
+        - text: Recevoir la newsletter
+        - img [ref=e8]
+    - generic [ref=e10]:
+      - generic [ref=e11]: Paris
+      - generic [ref=e12]: dimanche 13 septembre 2026
+  - banner [ref=e13]:
+    - generic [ref=e14]:
+      - link "Comparateur Télécoms, accueil" [ref=e15] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e16]: comparateur télécoms.
+      - navigation "Navigation principale" [ref=e17]:
+        - link "Mobile" [ref=e18] [cursor=pointer]:
+          - /url: /categories/mobile/
+        - link "Box internet" [ref=e19] [cursor=pointer]:
+          - /url: /categories/box-internet/
+        - link "Opérateurs" [ref=e20] [cursor=pointer]:
+          - /url: /categories/operateurs/
+        - link "Pro" [ref=e21] [cursor=pointer]:
+          - /url: /categories/pro/
+        - link "Guides" [ref=e22] [cursor=pointer]:
+          - /url: /categories/guides/
+      - generic [ref=e23]:
+        - button "Rechercher sur le site" [ref=e24] [cursor=pointer]:
+          - img [ref=e25]
+          - generic [ref=e28]: Rechercher
+        - generic "Langue" [ref=e29]:
+          - generic [ref=e30]: FR
+          - link "EN" [ref=e31] [cursor=pointer]:
+            - /url: /en/
+  - main [ref=e32]:
+    - navigation "Fil d'Ariane" [ref=e34]:
+      - list [ref=e35]:
+        - listitem [ref=e36]:
+          - link "Accueil" [ref=e37] [cursor=pointer]:
+            - /url: /
+          - img [ref=e38]
+        - listitem [ref=e40]:
+          - generic [ref=e41]: Box internet
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - generic [ref=e46]: Rubrique
+        - heading "Box internet" [level=1] [ref=e47]
+      - generic [ref=e48]:
+        - strong [ref=e49]: "4"
+        - text: articles
+    - generic [ref=e51]:
+      - generic [ref=e53]:
+        - article [ref=e54]:
+          - link [ref=e55] [cursor=pointer]:
+            - /url: /blog/meilleure-box-internet/
+          - generic [ref=e56]:
+            - link "Box internet" [ref=e58] [cursor=pointer]:
+              - /url: /categories/box-internet/
+              - text: Box internet
+            - 'heading "Meilleure box internet 2026 : le comparatif des offres fibre" [level=3] [ref=e60]':
+              - 'link "Meilleure box internet 2026 : le comparatif des offres fibre" [ref=e61] [cursor=pointer]':
+                - /url: /blog/meilleure-box-internet/
+            - paragraph [ref=e62]: "Freebox, Livebox, Bbox, SFR Box, RED : comparatif 2026 des box internet fibre sur le prix réel sur 24 mois, le débit, le Wi-Fi, la TV et l'engagement."
+            - generic [ref=e63]:
+              - img "Camille Roux" [ref=e64]
+              - link "Camille Roux" [ref=e65] [cursor=pointer]:
+                - /url: /auteurs/camille-roux/
+              - generic [ref=e66]:
+                - img [ref=e67]
+                - text: 7 min de lecture
+        - article [ref=e70]:
+          - link [ref=e71] [cursor=pointer]:
+            - /url: /blog/box-internet-sans-engagement/
+          - generic [ref=e72]:
+            - link "Box internet" [ref=e74] [cursor=pointer]:
+              - /url: /categories/box-internet/
+              - text: Box internet
+            - 'heading "Box internet sans engagement : quelle offre choisir en 2026 ?" [level=3] [ref=e76]':
+              - 'link "Box internet sans engagement : quelle offre choisir en 2026 ?" [ref=e77] [cursor=pointer]':
+                - /url: /blog/box-internet-sans-engagement/
+            - paragraph [ref=e78]: "Freebox, RED Box, SFR Premium : le comparatif 2026 des box internet fibre sans engagement, avec les prix, les hausses au 13e mois et les frais à prévoir."
+            - generic [ref=e79]:
+              - img "Camille Roux" [ref=e80]
+              - link "Camille Roux" [ref=e81] [cursor=pointer]:
+                - /url: /auteurs/camille-roux/
+              - generic [ref=e82]:
+                - img [ref=e83]
+                - text: 6 min de lecture
+        - article [ref=e86]:
+          - link [ref=e87] [cursor=pointer]:
+            - /url: /blog/freebox-ou-livebox/
+          - generic [ref=e88]:
+            - link "Box internet" [ref=e90] [cursor=pointer]:
+              - /url: /categories/box-internet/
+              - text: Box internet
+            - 'heading "Freebox ou Livebox : laquelle est la meilleure en 2026 ?" [level=3] [ref=e92]':
+              - 'link "Freebox ou Livebox : laquelle est la meilleure en 2026 ?" [ref=e93] [cursor=pointer]':
+                - /url: /blog/freebox-ou-livebox/
+            - paragraph [ref=e94]: "Freebox Pop, Ultra ou Livebox Fibre, Max : comparatif 2026 des box de Free et d'Orange sur le prix sur 24 mois, le Wi-Fi 7, les répéteurs, la TV et le streaming inclus."
+            - generic [ref=e95]:
+              - img "Camille Roux" [ref=e96]
+              - link "Camille Roux" [ref=e97] [cursor=pointer]:
+                - /url: /auteurs/camille-roux/
+              - generic [ref=e98]:
+                - img [ref=e99]
+                - text: 6 min de lecture
+        - article [ref=e102]:
+          - link [ref=e103] [cursor=pointer]:
+            - /url: /blog/box-5g-ou-fibre/
+          - generic [ref=e104]:
+            - link "Box internet" [ref=e106] [cursor=pointer]:
+              - /url: /categories/box-internet/
+              - text: Box internet
+            - 'heading "Box 5G ou fibre : que choisir quand la fibre n''est pas disponible ?" [level=3] [ref=e108]':
+              - 'link "Box 5G ou fibre : que choisir quand la fibre n''est pas disponible ?" [ref=e109] [cursor=pointer]':
+                - /url: /blog/box-5g-ou-fibre/
+            - paragraph [ref=e110]: "Box 5G Free, RED, SFR, Bouygues, Orange : comparatif 2026 des box 5G, leurs prix, leurs débits réels et les cas où elles remplacent la fibre ou l'ADSL."
+            - generic [ref=e111]:
+              - img "Mehdi Saïdi" [ref=e112]
+              - link "Mehdi Saïdi" [ref=e113] [cursor=pointer]:
+                - /url: /auteurs/mehdi-saidi/
+              - generic [ref=e114]:
+                - img [ref=e115]
+                - text: 6 min de lecture
+      - complementary [ref=e118]:
+        - generic [ref=e119]:
+          - generic [ref=e120]: Plus d'articles ❯
+          - 'link "Mobile Meilleur forfait mobile pas cher en 2026 : le comparatif 6 min de lecture" [ref=e121] [cursor=pointer]':
+            - /url: /blog/meilleur-forfait-mobile-pas-cher/
+            - generic [ref=e123]:
+              - generic [ref=e125]: Mobile
+              - 'heading "Meilleur forfait mobile pas cher en 2026 : le comparatif" [level=3] [ref=e127]'
+              - generic [ref=e128]:
+                - img [ref=e129]
+                - text: 6 min de lecture
+          - link "Opérateurs Quel est le meilleur opérateur téléphonique français en 2026 ? 7 min de lecture" [ref=e132] [cursor=pointer]:
+            - /url: /blog/meilleur-operateur-telephonique/
+            - generic [ref=e134]: Opérateurs
+            - heading "Quel est le meilleur opérateur téléphonique français en 2026 ?" [level=4] [ref=e136]
+            - generic [ref=e137]:
+              - img [ref=e138]
+              - text: 7 min de lecture
+          - 'link "Opérateurs Free ou Orange : quel opérateur choisir en 2026 ? 6 min de lecture" [ref=e141] [cursor=pointer]':
+            - /url: /blog/free-ou-orange/
+            - generic [ref=e143]: Opérateurs
+            - 'heading "Free ou Orange : quel opérateur choisir en 2026 ?" [level=4] [ref=e145]'
+            - generic [ref=e146]:
+              - img [ref=e147]
+              - text: 6 min de lecture
+          - link "Mobile Quel opérateur a le meilleur réseau mobile en France en 2026 ? 6 min de lecture" [ref=e150] [cursor=pointer]:
+            - /url: /blog/meilleur-reseau-mobile/
+            - generic [ref=e152]: Mobile
+            - heading "Quel opérateur a le meilleur réseau mobile en France en 2026 ?" [level=4] [ref=e154]
+            - generic [ref=e155]:
+              - img [ref=e156]
+              - text: 6 min de lecture
+          - link "Guides Comment changer d'opérateur mobile en gardant son numéro ? 5 min de lecture" [ref=e159] [cursor=pointer]:
+            - /url: /blog/changer-operateur-garder-numero/
+            - generic [ref=e161]: Guides
+            - heading "Comment changer d'opérateur mobile en gardant son numéro ?" [level=4] [ref=e163]
+            - generic [ref=e164]:
+              - img [ref=e165]
+              - text: 5 min de lecture
+  - contentinfo [ref=e168]:
+    - generic [ref=e169]:
+      - generic [ref=e170]:
+        - generic [ref=e171]:
+          - generic [ref=e172]: comparateur télécoms.
+          - paragraph [ref=e173]: "Comparatifs, tests et guides sur les box internet, les forfaits mobiles et les opérateurs télécoms français : Free, Orange, SFR, Bouygues et leurs marques low cost. Le média indépendant des télécoms."
+        - generic [ref=e174]:
+          - heading "Rubriques" [level=4] [ref=e175]
+          - link "Mobile" [ref=e176] [cursor=pointer]:
+            - /url: /categories/mobile/
+          - link "Box internet" [ref=e177] [cursor=pointer]:
+            - /url: /categories/box-internet/
+          - link "Opérateurs" [ref=e178] [cursor=pointer]:
+            - /url: /categories/operateurs/
+          - link "Pro" [ref=e179] [cursor=pointer]:
+            - /url: /categories/pro/
+          - link "Guides" [ref=e180] [cursor=pointer]:
+            - /url: /categories/guides/
+        - generic [ref=e181]:
+          - heading "Le média" [level=4] [ref=e182]
+          - link "Tous les articles" [ref=e183] [cursor=pointer]:
+            - /url: /blog/
+          - link "La rédaction" [ref=e184] [cursor=pointer]:
+            - /url: /auteurs/
+          - link "Rubriques" [ref=e185] [cursor=pointer]:
+            - /url: /categories/
+          - link "Sujets" [ref=e186] [cursor=pointer]:
+            - /url: /tags/
+          - link "Flux RSS" [ref=e187] [cursor=pointer]:
+            - /url: /index.xml
+          - link "Plan du site" [ref=e188] [cursor=pointer]:
+            - /url: /plan-du-site/
+        - generic [ref=e189]:
+          - heading "Rejoignez la communauté" [level=4] [ref=e190]
+          - paragraph [ref=e191]: Les nouvelles offres des opérateurs, les hausses à venir et nos comparatifs, chaque semaine dans votre boîte mail.
+          - generic [ref=e192]:
+            - generic [ref=e193]: Votre adresse e-mail
+            - textbox "Votre adresse e-mail" [ref=e194]:
+              - /placeholder: prenom@entreprise.fr
+            - button "Envoyer" [ref=e195] [cursor=pointer]
+      - generic [ref=e196]:
+        - generic [ref=e197]: © 2026 comparateur télécoms, tous droits réservés.
+        - generic [ref=e198]: Meilleur comparateur d'opérateurs télécoms en 2026, fait à Paris
+    - list [ref=e200]:
+      - listitem [ref=e201]:
+        - link "Mentions légales" [ref=e202] [cursor=pointer]:
+          - /url: /mentions-legales/
+      - listitem [ref=e203]:
+        - link "Politique de confidentialité" [ref=e204] [cursor=pointer]:
+          - /url: /politique-de-confidentialite/
+      - listitem [ref=e205]:
+        - link "CGU" [ref=e206] [cursor=pointer]:
+          - /url: /cgu/

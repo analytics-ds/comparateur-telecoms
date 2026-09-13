@@ -695,3 +695,73 @@ body.search-open { overflow: hidden; }
   .lang-item { padding: 5px 7px; font-size: 10.5px; }
   .nav-toggle { padding: 4px; }
 }
+
+/* =========================================================
+   Thème bleu nuit (2026-09-13) : tout le site sur fond sombre, sans dégradé
+   ========================================================= */
+:root {
+  --bg:        #0B1D3A;
+  --ink:       #FFFFFF;
+  --body-tx:   #D7E0EE;
+  --muted:     #9AAEC9;
+  --line:      rgba(255,255,255,.14);
+  --soft:      #12284D;
+  --cream:     #12284D;
+  --dark:      #071426;
+  --dark-2:    #12284D;
+  --primary:   #14B8A6;
+  --primary-2: #0E9F8E;
+  --bluebar-1: #071426;
+  --bluebar-2: #071426;
+  --shadow: 0 1px 2px rgba(0,0,0,.3), 0 6px 24px rgba(0,0,0,.35);
+  --shadow-hover: 0 4px 12px rgba(0,0,0,.4), 0 16px 44px rgba(0,0,0,.5);
+}
+html, body { background: var(--bg); color: var(--body-tx); }
+h1, h2, h3, h4, .card h3, .hitem h3, .arch-item h3, .prose h2, .prose h3 { color: var(--ink); }
+a { color: inherit; }
+.site-header { background: rgba(11,29,58,.96); }
+.brand-dot { color: var(--primary); }
+.main-nav a { color: var(--body-tx); }
+.main-nav a.is-active, .main-nav a:hover { color: var(--ink); background: var(--soft); }
+.ticker { background: var(--bg); }
+.ticker-list a { color: var(--body-tx); }
+.hero { background: var(--bg); }
+.hero-main { box-shadow: var(--shadow); }
+.trend { background: var(--soft); border: 1px solid var(--line); }
+.trend:hover { background: #183262; }
+.cat-bubble-img { border: 3px solid var(--soft); }
+.card, .arch-item, .author-card, .author-box { background: var(--soft); border-color: var(--line); }
+.card h3, .arch-item h3, .author-card h3 { color: var(--ink); }
+.band-cream { background: var(--soft); }
+.band-dark { background: var(--dark); }
+.hitem:hover { background: rgba(255,255,255,.06); }
+.search-toggle { background: var(--soft); color: var(--ink); border-color: var(--line); }
+.search-toggle:hover { background: #183262; border-color: var(--primary); color: var(--ink); }
+.lang-item { color: var(--muted); }
+.lang-item.is-current { background: var(--ink); color: var(--bg); }
+.prose > blockquote:first-child { background: var(--soft); border-color: var(--primary); box-shadow: 5px 5px 0 var(--primary); color: var(--ink); }
+.prose table { background: var(--soft); border-color: var(--line); }
+.prose th { background: var(--dark); color: var(--ink); }
+.prose td { border-color: var(--line); color: var(--body-tx); }
+.prose tr:nth-child(even) td { background: rgba(255,255,255,.04); }
+.prose details { background: var(--soft); border-color: var(--line); color: var(--body-tx); }
+.prose details summary { color: var(--ink); }
+.prose a { color: var(--primary); }
+.prose strong { color: var(--ink); }
+.tag { background: var(--soft); color: var(--body-tx); border-color: var(--line); }
+.toc a, .sidebar a, .breadcrumb a { color: var(--muted); }
+.site-footer { background: var(--dark); border-color: var(--line); }
+.site-footer, .site-footer a, .footer-brand p { color: var(--body-tx); }
+.newsletter input { background: var(--bg); color: var(--ink); border-color: var(--line); }
+.main-nav.open { background: var(--bg); }
+.back-to-top, .to-top { background: var(--soft); color: var(--ink); }
+.reading-bar { background: var(--primary); }
+.search-panel, .search-box, .search-results { background: var(--bg); color: var(--body-tx); }
+.search-item a:hover, .search-item.is-active a { background: var(--soft); }
+.search-item mark { background: var(--primary); color: var(--bg); }
+.pill-mobile { background: rgba(20,184,166,.18); color: #5EEAD4; }
+.pill-box-internet, .pill-internet-boxes { background: rgba(96,165,250,.18); color: #93C5FD; }
+.pill-operateurs, .pill-operators { background: rgba(255,90,54,.18); color: #FDA48A; }
+.pill-pro, .pill-business { background: rgba(167,139,250,.18); color: #C4B5FD; }
+.pill-guides { background: rgba(251,191,36,.18); color: #FCD34D; }
+.prose > blockquote:first-child > p:first-child strong { background: var(--primary); color: var(--bg); }
