@@ -55,7 +55,7 @@
 <link rel="stylesheet" href="{{ $fonts }}" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="{{ $fonts }}"></noscript>
 
-<link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+<link rel="stylesheet" href="{{ "css/main.css" | relURL }}?v={{ now.Unix }}">
 {{ with .OutputFormats.Get "rss" }}<link rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" href="{{ .Permalink }}">{{ end }}
 
 {{ partial "schema.html" . }}

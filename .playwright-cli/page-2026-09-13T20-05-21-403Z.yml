@@ -1,0 +1,426 @@
+- generic [active] [ref=e1]:
+  - link "Aller au contenu" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]: Box, forfaits et opérateurs comparés sans jargon
+      - link "Recevoir la newsletter" [ref=e7] [cursor=pointer]:
+        - /url: "#newsletter"
+        - text: Recevoir la newsletter
+        - img [ref=e8]
+    - generic [ref=e10]:
+      - generic [ref=e11]: Paris
+      - generic [ref=e12]: dimanche 13 septembre 2026
+  - banner [ref=e13]:
+    - generic [ref=e14]:
+      - link "Comparateur Télécoms, accueil" [ref=e15] [cursor=pointer]:
+        - /url: /comparateur-telecoms/
+        - generic [ref=e16]: comparateur télécoms.
+      - navigation "Navigation principale" [ref=e17]:
+        - link "Mobile" [ref=e18] [cursor=pointer]:
+          - /url: /comparateur-telecoms/categories/mobile/
+        - link "Box internet" [ref=e19] [cursor=pointer]:
+          - /url: /comparateur-telecoms/categories/box-internet/
+        - link "Opérateurs" [ref=e20] [cursor=pointer]:
+          - /url: /comparateur-telecoms/categories/operateurs/
+        - link "Pro" [ref=e21] [cursor=pointer]:
+          - /url: /comparateur-telecoms/categories/pro/
+        - link "Guides" [ref=e22] [cursor=pointer]:
+          - /url: /comparateur-telecoms/categories/guides/
+      - generic [ref=e23]:
+        - button "Rechercher sur le site" [ref=e24] [cursor=pointer]:
+          - img [ref=e25]
+          - generic [ref=e28]: Rechercher
+        - generic "Langue" [ref=e29]:
+          - generic [ref=e30]: FR
+          - link "EN" [ref=e31] [cursor=pointer]:
+            - /url: /comparateur-telecoms/en/blog/free-or-orange/
+  - main [ref=e32]:
+    - article [ref=e33]:
+      - generic [ref=e34]:
+        - navigation "Fil d'Ariane" [ref=e35]:
+          - list [ref=e36]:
+            - listitem [ref=e37]:
+              - link "Accueil" [ref=e38] [cursor=pointer]:
+                - /url: /
+              - img [ref=e39]
+            - listitem [ref=e41]:
+              - link "Opérateurs" [ref=e42] [cursor=pointer]:
+                - /url: /comparateur-telecoms/categories/operateurs/
+              - img [ref=e43]
+            - listitem [ref=e45]:
+              - generic [ref=e46]: "Free ou Orange : quel opérateur choisir en 2026 ?"
+        - generic [ref=e47]:
+          - link "Opérateurs" [ref=e49] [cursor=pointer]:
+            - /url: /comparateur-telecoms/categories/operateurs/
+            - text: Opérateurs
+          - 'heading "Free ou Orange : quel opérateur choisir en 2026 ?" [level=1] [ref=e51]'
+          - paragraph [ref=e52]: "Free ou Orange pour la box et le mobile : comparatif 2026 des prix, du réseau, de l'engagement, des services inclus et de la satisfaction client des deux opérateurs."
+        - generic [ref=e53]:
+          - generic [ref=e54]:
+            - img "Antoine Lefèvre" [ref=e55]
+            - link "Antoine Lefèvre" [ref=e56] [cursor=pointer]:
+              - /url: /comparateur-telecoms/auteurs/antoine-lefevre/
+            - time [ref=e57]: 19 août 2026
+            - generic [ref=e58]:
+              - img [ref=e59]
+              - text: 6 min de lecture
+          - generic "Partager" [ref=e62]:
+            - generic [ref=e63]:
+              - img [ref=e64]
+              - text: Partager
+            - link "Partager sur X" [ref=e70] [cursor=pointer]:
+              - /url: https://x.com/intent/post?url=https%3a%2f%2fanalytics-ds.github.io%2fcomparateur-telecoms%2fblog%2ffree-ou-orange%2f&text=Free%20ou%20Orange%20%3a%20quel%20op%c3%a9rateur%20choisir%20en%202026%20%3f
+              - img [ref=e71]
+            - link "Partager sur LinkedIn" [ref=e73] [cursor=pointer]:
+              - /url: https://www.linkedin.com/sharing/share-offsite/?url=https%3a%2f%2fanalytics-ds.github.io%2fcomparateur-telecoms%2fblog%2ffree-ou-orange%2f
+              - img [ref=e74]
+            - link "Partager sur Facebook" [ref=e76] [cursor=pointer]:
+              - /url: https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fanalytics-ds.github.io%2fcomparateur-telecoms%2fblog%2ffree-ou-orange%2f
+              - img [ref=e77]
+            - link "Partager sur WhatsApp" [ref=e79] [cursor=pointer]:
+              - /url: https://wa.me/?text=Free%20ou%20Orange%20%3a%20quel%20op%c3%a9rateur%20choisir%20en%202026%20%3f%20https%3a%2f%2fanalytics-ds.github.io%2fcomparateur-telecoms%2fblog%2ffree-ou-orange%2f
+              - img [ref=e80]
+        - figure [ref=e82]:
+          - img "Personne allongée sur un canapé consultant son smartphone" [ref=e84]
+          - generic [ref=e85]: Photo par anykeyh via Flickr (CC BY-SA 2.0)
+        - generic [ref=e86]:
+          - generic [ref=e87]:
+            - generic [ref=e88]:
+              - blockquote [ref=e89]:
+                - paragraph [ref=e90]:
+                  - strong [ref=e91]: "En bref :"
+                - list [ref=e92]:
+                  - listitem [ref=e93]: Free gagne sur le prix, l’absence d’engagement et la satisfaction globale (8,1 sur 10 à l’ARCEP contre 8,0 pour Orange).
+                  - listitem [ref=e94]: Orange gagne sur la qualité du réseau mobile, surtout en zone rurale et dans les transports, et sur la rapidité de résolution des problèmes.
+                  - listitem [ref=e95]: Pour un foyer urbain qui veut une box et plusieurs forfaits, Free coûte 20 à 40 euros de moins par mois ; pour un habitant de zone rurale qui dépend de son mobile, Orange reste la valeur sûre.
+              - paragraph [ref=e96]:
+                - strong [ref=e97]: Free
+                - text: et
+                - strong [ref=e98]: Orange
+                - text: "occupent les deux premières places de l’observatoire de la satisfaction client de l’ARCEP et incarnent deux modèles opposés : l’opérateur historique, réseau le plus étendu, prix premium et engagement de 12 mois d’un côté ; le challenger devenu grand, sans engagement, prix fixes et services inclus de l’autre. Ce duel compare les deux sur la box, le mobile, le réseau et le service client, avec les tarifs relevés le 13 septembre 2026."
+              - heading "Free ou Orange en un tableau" [level=2] [ref=e99]
+              - table [ref=e101]:
+                - rowgroup [ref=e102]:
+                  - row "Critère Free Orange" [ref=e103]:
+                    - columnheader "Critère" [ref=e104]
+                    - columnheader "Free" [ref=e105]
+                    - columnheader "Orange" [ref=e106]
+                - rowgroup [ref=e107]:
+                  - row "Box fibre d’entrée Freebox Pop S, 24,99 €/mois, prix fixe Livebox Fibre, engagement 12 mois, hausse au 13e mois" [ref=e108]:
+                    - cell "Box fibre d’entrée" [ref=e109]
+                    - cell "Freebox Pop S, 24,99 €/mois, prix fixe" [ref=e110]
+                    - cell "Livebox Fibre, engagement 12 mois, hausse au 13e mois" [ref=e111]
+                  - row "Box haut de gamme Freebox Ultra, 49,99 € puis 59,99 €, Netflix, Disney+, Prime Video inclus Livebox Max, 47,99 € puis 57,99 €, remises de 5 € sur 4 plateformes" [ref=e112]:
+                    - cell "Box haut de gamme" [ref=e113]
+                    - cell "Freebox Ultra, 49,99 € puis 59,99 €, Netflix, Disney+, Prime Video inclus" [ref=e114]
+                    - cell "Livebox Max, 47,99 € puis 57,99 €, remises de 5 € sur 4 plateformes" [ref=e115]
+                  - row "Engagement box Aucun 12 mois" [ref=e116]:
+                    - cell "Engagement box" [ref=e117]
+                    - cell "Aucun" [ref=e118]
+                    - cell "12 mois" [ref=e119]
+                  - row "Forfait 5G phare Free 5G+ 350 Go, 19,99 €, bloqué jusqu’en 2027 Forfaits Orange plus chers ; Sosh 200 Go à 15,99 €" [ref=e120]:
+                    - cell "Forfait 5G phare" [ref=e121]
+                    - cell "Free 5G+ 350 Go, 19,99 €, bloqué jusqu’en 2027" [ref=e122]
+                    - cell "Forfaits Orange plus chers ; Sosh 200 Go à 15,99 €" [ref=e123]
+                  - row "Forfait d’appoint 2 €, gratuit avec Freebox Non" [ref=e124]:
+                    - cell "Forfait d’appoint" [ref=e125]
+                    - cell "2 €, gratuit avec Freebox" [ref=e126]
+                    - cell "Non" [ref=e127]
+                  - row "Réseau mobile (ARCEP 2025) 84 % d’appels parfaits 91 % d’appels parfaits" [ref=e128]:
+                    - cell "Réseau mobile (ARCEP 2025)" [ref=e129]
+                    - cell "84 % d’appels parfaits" [ref=e130]
+                    - cell "91 % d’appels parfaits" [ref=e131]
+                  - row "Couverture 5G La plus large (bande 700 MHz) Débit 5G 227 Mbit/s" [ref=e132]:
+                    - cell "Couverture 5G" [ref=e133]
+                    - cell "La plus large (bande 700 MHz)" [ref=e134]
+                    - cell "Débit 5G 227 Mbit/s" [ref=e135]
+                  - row "Satisfaction globale (ARCEP) 8,1/10 8,0/10" [ref=e136]:
+                    - cell "Satisfaction globale (ARCEP)" [ref=e137]
+                    - cell "8,1/10" [ref=e138]
+                    - cell "8,0/10" [ref=e139]
+                  - row "Résolution problèmes fixes 85 % 90 %" [ref=e140]:
+                    - cell "Résolution problèmes fixes" [ref=e141]
+                    - cell "85 %" [ref=e142]
+                    - cell "90 %" [ref=e143]
+              - 'heading "La box : Free l’emporte sur le prix et la liberté" [level=2] [ref=e144]'
+              - paragraph [ref=e145]:
+                - text: La gamme Freebox va de
+                - strong [ref=e146]: 24,99 euros
+                - text: (Pop S, prix fixe, Wi-Fi 7, 5 Gbit/s) à
+                - strong [ref=e147]: 49,99 euros puis 59,99 euros
+                - text: (Ultra, 8 Gbit/s symétriques, Wi-Fi 7 quad-band, Netflix, Disney+ et Prime Video inclus). Toutes sont
+                - strong [ref=e148]: sans engagement
+                - text: .
+              - paragraph [ref=e149]:
+                - text: Orange démarre plus haut et engage sur 12 mois. La
+                - strong [ref=e150]: Livebox Max Fibre
+                - text: ", son offre haut de gamme, est à"
+                - strong [ref=e151]: 47,99 euros puis 57,99 euros
+                - text: ", avec 49 euros de frais de mise en service (offerts jusqu’au 7 octobre 2026). Elle propose 8 Gbit/s symétriques, le Wi-Fi 7, jusqu’à trois répéteurs, 200 chaînes avec un second décodeur et 5 euros de remise mensuelle cumulable sur chacune des quatre plateformes partenaires (Netflix, Disney+, Ligue 1+, HBO Max)."
+              - paragraph [ref=e152]: À prix comparable, la Freebox Ultra inclut trois abonnements complets là où la Livebox Max offre des remises partielles. Orange conserve l’avantage sur le nombre de répéteurs fournis et sur son réseau fixe, premier de l’ARCEP pour la résolution des problèmes (90 %).
+              - 'heading "Le mobile : Free pour le prix, Orange pour le réseau" [level=2] [ref=e153]'
+              - paragraph [ref=e154]:
+                - text: Le
+                - strong [ref=e155]: forfait Free 5G+ 350 Go à 19,99 euros par mois
+                - text: ", prix bloqué jusqu’en 2027 et enrichi d’une eSIM montre, d’un VPN et de plus de 300 chaînes TV, n’a pas d’équivalent chez Orange à ce tarif. Le"
+                - strong [ref=e156]: forfait 2 euros
+                - text: (0 euro pour les abonnés Freebox) et les remises de 10 euros par ligne pour les abonnés Freebox creusent l’écart pour les familles. Le
+                - strong [ref=e157]: forfait Free Max
+                - text: (29,99 euros, 19,99 euros avec Freebox) apporte la data illimitée dans plus de 135 destinations.
+              - paragraph [ref=e158]:
+                - text: "Orange vend son réseau :"
+                - strong [ref=e159]: 91 % d’appels parfaits
+                - text: aux mesures ARCEP 2025,
+                - strong [ref=e160]: 83 % en zone rurale
+                - text: contre 76 % pour Free,
+                - strong [ref=e161]: 74 % d’appels maintenus
+                - text: dans les trains longue distance contre 61 %. En débit, nPerf lui mesure la meilleure vitesse de téléchargement moyenne (128,91 Mbit/s) et 227 Mbit/s en 5G sur la bande 3,5 GHz, contre 198 Mbit/s pour Free. Free garde toutefois la
+                - strong [ref=e162]: couverture 5G la plus large
+                - text: grâce à la bande 700 MHz, plus étendue mais moins rapide. La marque
+                - strong [ref=e163]: Sosh
+                - text: permet d’accéder au réseau Orange sans engagement, avec un forfait 200 Go 5G à 15,99 euros orienté international.
+              - 'heading "Le service client : match serré, avantage Free sur la satisfaction" [level=2] [ref=e164]'
+              - paragraph [ref=e165]:
+                - text: L’observatoire ARCEP 2025 place les deux opérateurs en tête.
+                - strong [ref=e166]: Free
+                - text: obtient la
+                - strong [ref=e167]: meilleure note globale
+                - text: ", 8,1 sur 10, et est l’opérateur qui déclare le moins de problèmes."
+                - strong [ref=e168]: Orange
+                - text: est premier sur la
+                - strong [ref=e169]: résolution des problèmes fixes
+                - text: (90 % contre 85 % pour Free) et sur la
+                - strong [ref=e170]: rapidité
+                - text: (78 % des incidents traités en moins de trois jours contre 70 %). Sur le mobile, Free Mobile a reculé en 2025 sur la résolution (68 %), Orange se maintient à 83 %.
+              - heading "Le verdict selon le profil" [level=2] [ref=e171]
+              - list [ref=e172]:
+                - listitem [ref=e173]:
+                  - strong [ref=e174]: Foyer urbain ou périurbain, fibre disponible, plusieurs mobiles
+                  - text: ": Free. L’écart mensuel atteint 20 à 40 euros pour une box et trois ou quatre lignes, sans engagement."
+                - listitem [ref=e175]:
+                  - strong [ref=e176]: Zone rurale, usage mobile intensif, trajets en train fréquents
+                  - text: ": Orange, ou Sosh pour le même réseau à moindre coût."
+                - listitem [ref=e177]:
+                  - strong [ref=e178]: Priorité aux contenus inclus
+                  - text: ": Free, avec Netflix, Disney+ et Prime Video dans la Freebox Ultra."
+                - listitem [ref=e179]:
+                  - strong [ref=e180]: Grand logement à couvrir en Wi-Fi
+                  - text: ": Orange fournit jusqu’à trois répéteurs avec la Livebox Max ; Free en inclut un."
+                - listitem [ref=e181]:
+                  - strong [ref=e182]: Refus de tout engagement
+                  - text: ": Free, seul des deux à ne proposer que du sans engagement."
+              - heading "Méthode et sources" [level=2] [ref=e183]
+              - paragraph [ref=e184]:
+                - text: "Tarifs relevés le 13 septembre 2026 sur free.fr, orange.fr, sosh.fr et les comparateurs spécialisés. Mesures de réseau :"
+                - link "campagne ARCEP 2025" [ref=e185] [cursor=pointer]:
+                  - /url: https://www.arcep.fr/actualites/actualites-et-communiques/detail/n/qualite-des-services-mobiles-en-metropole-201125.html
+                - text: "et baromètre nPerf 2026. Satisfaction :"
+                - link "observatoire ARCEP" [ref=e186] [cursor=pointer]:
+                  - /url: https://www.arcep.fr/cartes-et-donnees/nos-publications-chiffrees/satisfaction-client/observatoire-de-la-satisfaction-client-edition-2026.html
+                - text: .
+              - group [ref=e187]:
+                - generic "Free ou Orange, lequel est le moins cher ? +" [ref=e188] [cursor=pointer]
+                - text: Free, nettement. La Freebox Pop S est à 24,99 euros par mois à prix fixe et sans engagement ; la Livebox Max Fibre d'Orange est à 47,99 euros puis 57,99 euros avec engagement de 12 mois. Sur le mobile, le forfait Free 5G+ 350 Go est à 19,99 euros bloqué jusqu'en 2027, quand l'équivalent Orange coûte plus cher et l'offre Sosh 200 Go est à 15,99 euros pour moins de data.
+              - group [ref=e189]:
+                - generic "Free ou Orange, lequel a le meilleur réseau ? +" [ref=e190] [cursor=pointer]
+                - text: "Orange, pour la quinzième année consécutive selon l'ARCEP : 91 % d'appels parfaits contre 84 % pour Free, et un écart plus marqué en zone rurale (83 % contre 76 %) et dans les trains (74 % contre 61 %). Free compense par la couverture 5G la plus large, mesurée par nPerf."
+              - group [ref=e191]:
+                - generic "Free ou Orange, lequel a le meilleur service client ? +" [ref=e192] [cursor=pointer]
+                - text: Les deux sont en tête de l'observatoire ARCEP 2025. Free obtient la meilleure satisfaction globale (8,1 sur 10 contre 8,0) et déclare le moins de problèmes ; Orange résout mieux les problèmes fixes (90 % contre 85 %) et plus vite (78 % en moins de trois jours contre 70 %).
+            - generic [ref=e193]:
+              - link "#free" [ref=e194] [cursor=pointer]:
+                - /url: /comparateur-telecoms/tags/free/
+              - link "#orange" [ref=e195] [cursor=pointer]:
+                - /url: /comparateur-telecoms/tags/orange/
+              - link "#comparatif" [ref=e196] [cursor=pointer]:
+                - /url: /comparateur-telecoms/tags/comparatif/
+              - link "#box internet" [ref=e197] [cursor=pointer]:
+                - /url: /comparateur-telecoms/tags/box-internet/
+              - link "#forfait mobile" [ref=e198] [cursor=pointer]:
+                - /url: /comparateur-telecoms/tags/forfait-mobile/
+              - link "#duel" [ref=e199] [cursor=pointer]:
+                - /url: /comparateur-telecoms/tags/duel/
+            - complementary "À propos de l'auteur" [ref=e200]:
+              - img "Antoine Lefèvre" [ref=e201]
+              - generic [ref=e202]:
+                - text: À propos de l'auteur
+                - heading "Antoine Lefèvre" [level=3] [ref=e203]
+                - generic [ref=e204]: Rédacteur en chef, spécialiste des opérateurs
+                - paragraph [ref=e205]: Antoine suit le marché des télécoms français depuis douze ans. Il décortique les grilles tarifaires des opérateurs, leurs hausses au 13e mois et leurs conditions cachées, pour dire simplement quelle offre vaut le coup.
+                - generic [ref=e206]:
+                  - strong [ref=e207]: "Expertise :"
+                  - text: Opérateurs télécoms, Grilles tarifaires, Régulation ARCEP, Marché français
+            - complementary [ref=e208]:
+              - heading "À lire aussi ❯" [level=2] [ref=e209]
+              - generic [ref=e210]:
+                - article [ref=e211]:
+                  - link [ref=e212] [cursor=pointer]:
+                    - /url: /comparateur-telecoms/blog/meilleur-operateur-telephonique/
+                  - generic [ref=e213]:
+                    - link "Opérateurs" [ref=e215] [cursor=pointer]:
+                      - /url: /comparateur-telecoms/categories/operateurs/
+                      - text: Opérateurs
+                    - heading "Quel est le meilleur opérateur téléphonique français en 2026 ?" [level=3] [ref=e217]:
+                      - link "Quel est le meilleur opérateur téléphonique français en 2026 ?" [ref=e218] [cursor=pointer]:
+                        - /url: /comparateur-telecoms/blog/meilleur-operateur-telephonique/
+                    - paragraph [ref=e219]: "Free, Orange, SFR ou Bouygues Telecom : comparatif 2026 des quatre opérateurs français sur les prix, le réseau, la satisfaction client et les offres box et mobile."
+                    - generic [ref=e220]:
+                      - img "Antoine Lefèvre" [ref=e221]
+                      - link "Antoine Lefèvre" [ref=e222] [cursor=pointer]:
+                        - /url: /comparateur-telecoms/auteurs/antoine-lefevre/
+                      - generic [ref=e223]:
+                        - img [ref=e224]
+                        - text: 7 min de lecture
+                - article [ref=e227]:
+                  - link [ref=e228] [cursor=pointer]:
+                    - /url: /comparateur-telecoms/blog/freebox-ou-livebox/
+                  - generic [ref=e229]:
+                    - link "Box internet" [ref=e231] [cursor=pointer]:
+                      - /url: /comparateur-telecoms/categories/box-internet/
+                      - text: Box internet
+                    - 'heading "Freebox ou Livebox : laquelle est la meilleure en 2026 ?" [level=3] [ref=e233]':
+                      - 'link "Freebox ou Livebox : laquelle est la meilleure en 2026 ?" [ref=e234] [cursor=pointer]':
+                        - /url: /comparateur-telecoms/blog/freebox-ou-livebox/
+                    - paragraph [ref=e235]: "Freebox Pop, Ultra ou Livebox Fibre, Max : comparatif 2026 des box de Free et d'Orange sur le prix sur 24 mois, le Wi-Fi 7, les répéteurs, la TV et le streaming inclus."
+                    - generic [ref=e236]:
+                      - img "Camille Roux" [ref=e237]
+                      - link "Camille Roux" [ref=e238] [cursor=pointer]:
+                        - /url: /comparateur-telecoms/auteurs/camille-roux/
+                      - generic [ref=e239]:
+                        - img [ref=e240]
+                        - text: 6 min de lecture
+                - article [ref=e243]:
+                  - link [ref=e244] [cursor=pointer]:
+                    - /url: /comparateur-telecoms/blog/box-5g-ou-fibre/
+                  - generic [ref=e245]:
+                    - link "Box internet" [ref=e247] [cursor=pointer]:
+                      - /url: /comparateur-telecoms/categories/box-internet/
+                      - text: Box internet
+                    - 'heading "Box 5G ou fibre : que choisir quand la fibre n''est pas disponible ?" [level=3] [ref=e249]':
+                      - 'link "Box 5G ou fibre : que choisir quand la fibre n''est pas disponible ?" [ref=e250] [cursor=pointer]':
+                        - /url: /comparateur-telecoms/blog/box-5g-ou-fibre/
+                    - paragraph [ref=e251]: "Box 5G Free, RED, SFR, Bouygues, Orange : comparatif 2026 des box 5G, leurs prix, leurs débits réels et les cas où elles remplacent la fibre ou l'ADSL."
+                    - generic [ref=e252]:
+                      - img "Mehdi Saïdi" [ref=e253]
+                      - link "Mehdi Saïdi" [ref=e254] [cursor=pointer]:
+                        - /url: /comparateur-telecoms/auteurs/mehdi-saidi/
+                      - generic [ref=e255]:
+                        - img [ref=e256]
+                        - text: 6 min de lecture
+            - navigation "Navigation articles" [ref=e259]:
+              - 'link "Précédent Freebox ou Livebox : laquelle est la meilleure en 2026 ?" [ref=e260] [cursor=pointer]':
+                - /url: /comparateur-telecoms/blog/freebox-ou-livebox/
+                - generic [ref=e261]: Précédent
+                - text: "Freebox ou Livebox : laquelle est la meilleure en 2026 ?"
+              - 'link "Suivant Box internet sans engagement : quelle offre choisir en 2026 ?" [ref=e262] [cursor=pointer]':
+                - /url: /comparateur-telecoms/blog/box-internet-sans-engagement/
+                - generic [ref=e263]: Suivant
+                - text: "Box internet sans engagement : quelle offre choisir en 2026 ?"
+          - complementary [ref=e264]:
+            - generic [ref=e265]:
+              - generic [ref=e266]: Sommaire ❯
+              - navigation [ref=e267]:
+                - list [ref=e268]:
+                  - listitem [ref=e269]:
+                    - link "Free ou Orange en un tableau" [ref=e270] [cursor=pointer]:
+                      - /url: "#free-ou-orange-en-un-tableau"
+                  - listitem [ref=e271]:
+                    - 'link "La box : Free l’emporte sur le prix et la liberté" [ref=e272] [cursor=pointer]':
+                      - /url: "#la-box--free-lemporte-sur-le-prix-et-la-liberté"
+                  - listitem [ref=e273]:
+                    - 'link "Le mobile : Free pour le prix, Orange pour le réseau" [ref=e274] [cursor=pointer]':
+                      - /url: "#le-mobile--free-pour-le-prix-orange-pour-le-réseau"
+                  - listitem [ref=e275]:
+                    - 'link "Le service client : match serré, avantage Free sur la satisfaction" [ref=e276] [cursor=pointer]':
+                      - /url: "#le-service-client--match-serré-avantage-free-sur-la-satisfaction"
+                  - listitem [ref=e277]:
+                    - link "Le verdict selon le profil" [ref=e278] [cursor=pointer]:
+                      - /url: "#le-verdict-selon-le-profil"
+                  - listitem [ref=e279]:
+                    - link "Méthode et sources" [ref=e280] [cursor=pointer]:
+                      - /url: "#méthode-et-sources"
+            - generic [ref=e281]:
+              - generic [ref=e282]: Plus d'articles ❯
+              - 'link "Mobile Meilleur forfait mobile pas cher en 2026 : le comparatif 6 min de lecture" [ref=e283] [cursor=pointer]':
+                - /url: /comparateur-telecoms/blog/meilleur-forfait-mobile-pas-cher/
+                - generic [ref=e285]:
+                  - generic [ref=e287]: Mobile
+                  - 'heading "Meilleur forfait mobile pas cher en 2026 : le comparatif" [level=3] [ref=e289]'
+                  - generic [ref=e290]:
+                    - img [ref=e291]
+                    - text: 6 min de lecture
+              - 'link "Box internet Meilleure box internet 2026 : le comparatif des offres fibre 7 min de lecture" [ref=e294] [cursor=pointer]':
+                - /url: /comparateur-telecoms/blog/meilleure-box-internet/
+                - generic [ref=e296]: Box internet
+                - 'heading "Meilleure box internet 2026 : le comparatif des offres fibre" [level=4] [ref=e298]'
+                - generic [ref=e299]:
+                  - img [ref=e300]
+                  - text: 7 min de lecture
+              - link "Opérateurs Quel est le meilleur opérateur téléphonique français en 2026 ? 7 min de lecture" [ref=e303] [cursor=pointer]:
+                - /url: /comparateur-telecoms/blog/meilleur-operateur-telephonique/
+                - generic [ref=e305]: Opérateurs
+                - heading "Quel est le meilleur opérateur téléphonique français en 2026 ?" [level=4] [ref=e307]
+                - generic [ref=e308]:
+                  - img [ref=e309]
+                  - text: 7 min de lecture
+              - 'link "Box internet Box internet sans engagement : quelle offre choisir en 2026 ? 6 min de lecture" [ref=e312] [cursor=pointer]':
+                - /url: /comparateur-telecoms/blog/box-internet-sans-engagement/
+                - generic [ref=e314]: Box internet
+                - 'heading "Box internet sans engagement : quelle offre choisir en 2026 ?" [level=4] [ref=e316]'
+                - generic [ref=e317]:
+                  - img [ref=e318]
+                  - text: 6 min de lecture
+  - contentinfo [ref=e321]:
+    - generic [ref=e322]:
+      - generic [ref=e323]:
+        - generic [ref=e324]:
+          - generic [ref=e325]: comparateur télécoms.
+          - paragraph [ref=e326]: "Comparatifs, tests et guides sur les box internet, les forfaits mobiles et les opérateurs télécoms français : Free, Orange, SFR, Bouygues et leurs marques low cost. Le média indépendant des télécoms."
+        - generic [ref=e327]:
+          - heading "Rubriques" [level=4] [ref=e328]
+          - link "Mobile" [ref=e329] [cursor=pointer]:
+            - /url: /comparateur-telecoms/categories/mobile/
+          - link "Box internet" [ref=e330] [cursor=pointer]:
+            - /url: /comparateur-telecoms/categories/box-internet/
+          - link "Opérateurs" [ref=e331] [cursor=pointer]:
+            - /url: /comparateur-telecoms/categories/operateurs/
+          - link "Pro" [ref=e332] [cursor=pointer]:
+            - /url: /comparateur-telecoms/categories/pro/
+          - link "Guides" [ref=e333] [cursor=pointer]:
+            - /url: /comparateur-telecoms/categories/guides/
+        - generic [ref=e334]:
+          - heading "Le média" [level=4] [ref=e335]
+          - link "Tous les articles" [ref=e336] [cursor=pointer]:
+            - /url: /comparateur-telecoms/blog/
+          - link "La rédaction" [ref=e337] [cursor=pointer]:
+            - /url: /comparateur-telecoms/auteurs/
+          - link "Rubriques" [ref=e338] [cursor=pointer]:
+            - /url: /comparateur-telecoms/categories/
+          - link "Sujets" [ref=e339] [cursor=pointer]:
+            - /url: /comparateur-telecoms/tags/
+          - link "Flux RSS" [ref=e340] [cursor=pointer]:
+            - /url: /comparateur-telecoms/index.xml
+          - link "Plan du site" [ref=e341] [cursor=pointer]:
+            - /url: /comparateur-telecoms/plan-du-site/
+        - generic [ref=e342]:
+          - heading "Rejoignez la communauté" [level=4] [ref=e343]
+          - paragraph [ref=e344]: Les nouvelles offres des opérateurs, les hausses à venir et nos comparatifs, chaque semaine dans votre boîte mail.
+          - generic [ref=e345]:
+            - generic [ref=e346]: Votre adresse e-mail
+            - textbox "Votre adresse e-mail" [ref=e347]:
+              - /placeholder: prenom@entreprise.fr
+            - button "Envoyer" [ref=e348] [cursor=pointer]
+      - generic [ref=e349]:
+        - generic [ref=e350]: © 2026 comparateur télécoms, tous droits réservés.
+        - generic [ref=e351]: Meilleur comparateur d'opérateurs télécoms en 2026, fait à Paris
+    - list [ref=e353]:
+      - listitem [ref=e354]:
+        - link "Mentions légales" [ref=e355] [cursor=pointer]:
+          - /url: /comparateur-telecoms/mentions-legales/
+      - listitem [ref=e356]:
+        - link "Politique de confidentialité" [ref=e357] [cursor=pointer]:
+          - /url: /comparateur-telecoms/politique-de-confidentialite/
+      - listitem [ref=e358]:
+        - link "CGU" [ref=e359] [cursor=pointer]:
+          - /url: /comparateur-telecoms/cgu/
