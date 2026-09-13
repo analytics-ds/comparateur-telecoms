@@ -687,3 +687,11 @@ body.search-open { overflow: hidden; }
   .search-toggle svg { width: 19px; height: 19px; }
   .prose table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; white-space: nowrap; }
 }
+@media (max-width: 900px) {
+  .header-inner { gap: 8px; }
+  .brand-name { font-size: 17px; }
+  .header-right { gap: 4px; flex: 0 0 auto; }
+  .search-toggle { width: 38px; height: 38px; min-width: 38px; }
+  .lang-item { padding: 5px 7px; font-size: 10.5px; }
+  .nav-toggle { padding: 4px; }
+}
