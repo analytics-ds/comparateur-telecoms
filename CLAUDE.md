@@ -16,3 +16,7 @@ Site média sur les opérateurs télécoms français, opéré en interne par dat
 hugo server --port 1515 --bind 127.0.0.1 --renderToMemory
 hugo -d /tmp/ct-build
 ```
+
+## Piège vécu : chemins d'images avec slash initial sur un sous-chemin GitHub Pages (2026-09-13)
+
+Tant que le site vit sous `analytics-ds.github.io/comparateur-telecoms/`, un chemin `image: "/images/blog/x.webp"` casse : `relURL` et `absURL` traitent un chemin qui commence par `/` comme relatif à la racine du domaine, pas de la `baseURL`, donc l'image pointe sur `analytics-ds.github.io/images/...` (404). Règle : **`image:` et `avatar:` sans slash initial** (`images/blog/x.webp`), idem pour les valeurs par défaut des templates (`single.html`). Le jour où un ndd est posé à la racine, les deux formes marchent ; garder la forme sans slash.

@@ -7,7 +7,7 @@ categories: ["Box internet"]
 tags: ["freebox", "livebox", "free", "orange", "comparatif", "wifi 7"]
 author: "camille-roux"
 auteurs: ["camille-roux"]
-image: "/images/blog/freebox-ou-livebox.webp"
+image: "images/blog/freebox-ou-livebox.webp"
 imageAlt: "Livebox habillée d'un motif vache, première génération"
 imageCredit: "Photo par Flowik04 via Wikimedia (CC BY-SA 4.0)"
 faq:

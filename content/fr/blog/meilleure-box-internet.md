@@ -7,7 +7,7 @@ categories: ["Box internet"]
 tags: ["box internet", "fibre", "comparatif", "freebox", "livebox", "bbox"]
 author: "camille-roux"
 auteurs: ["camille-roux"]
-image: "/images/blog/meilleure-box-internet.webp"
+image: "images/blog/meilleure-box-internet.webp"
 imageAlt: "Freebox mini 4K et son boîtier Player"
 imageCredit: "Photo par Weweje via Wikimedia (CC BY-SA 4.0)"
 faq:

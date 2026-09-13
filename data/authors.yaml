@@ -5,7 +5,7 @@ antoine-lefevre:
   id: antoine-lefevre
   name: Antoine Lefèvre
   type: person
-  avatar: /images/authors/antoine-lefevre.svg
+  avatar: images/authors/antoine-lefevre.svg
   linkedinUrl: ""
   jobTitle:
     fr: Rédacteur en chef, spécialiste des opérateurs
@@ -24,7 +24,7 @@ camille-roux:
   id: camille-roux
   name: Camille Roux
   type: person
-  avatar: /images/authors/camille-roux.svg
+  avatar: images/authors/camille-roux.svg
   linkedinUrl: ""
   jobTitle:
     fr: Journaliste box internet et fibre
@@ -43,7 +43,7 @@ mehdi-saidi:
   id: mehdi-saidi
   name: Mehdi Saïdi
   type: person
-  avatar: /images/authors/mehdi-saidi.svg
+  avatar: images/authors/mehdi-saidi.svg
   linkedinUrl: ""
   jobTitle:
     fr: Spécialiste réseaux mobiles et mesures
@@ -62,7 +62,7 @@ julie-perrin:
   id: julie-perrin
   name: Julie Perrin
   type: person
-  avatar: /images/authors/julie-perrin.svg
+  avatar: images/authors/julie-perrin.svg
   linkedinUrl: ""
   jobTitle:
     fr: Rédactrice forfaits mobiles et bons plans
@@ -81,7 +81,7 @@ nicolas-garnier:
   id: nicolas-garnier
   name: Nicolas Garnier
   type: person
-  avatar: /images/authors/nicolas-garnier.svg
+  avatar: images/authors/nicolas-garnier.svg
   linkedinUrl: ""
   jobTitle:
     fr: Consultant télécoms pour les TPE et PME
@@ -100,7 +100,7 @@ la-redaction:
   id: la-redaction
   name: La rédaction
   type: organization
-  avatar: /images/authors/la-redaction.svg
+  avatar: images/authors/la-redaction.svg
   linkedinUrl: ""
   jobTitle:
     fr: Rédaction

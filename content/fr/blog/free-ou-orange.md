@@ -7,7 +7,7 @@ categories: ["Opérateurs"]
 tags: ["free", "orange", "comparatif", "box internet", "forfait mobile", "duel"]
 author: "antoine-lefevre"
 auteurs: ["antoine-lefevre"]
-image: "/images/blog/free-ou-orange.webp"
+image: "images/blog/free-ou-orange.webp"
 imageAlt: "Personne allongée sur un canapé consultant son smartphone"
 imageCredit: "Photo par anykeyh via Flickr (CC BY-SA 2.0)"
 faq:

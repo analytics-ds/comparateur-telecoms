@@ -7,7 +7,7 @@ categories: ["Opérateurs"]
 tags: ["comparatif", "free", "orange", "sfr", "bouygues telecom", "classement"]
 author: "antoine-lefevre"
 auteurs: ["antoine-lefevre"]
-image: "/images/blog/meilleur-operateur-telephonique.webp"
+image: "images/blog/meilleur-operateur-telephonique.webp"
 imageAlt: "Pylône de téléphonie mobile au coucher du soleil"
 imageCredit: "Photo par JeepersMedia via Flickr (CC BY 2.0)"
 faq:

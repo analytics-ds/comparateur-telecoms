@@ -7,7 +7,7 @@ categories: ["Box internet"]
 tags: ["box 5g", "fibre", "box 4g", "comparatif", "free", "red by sfr", "orange"]
 author: "mehdi-saidi"
 auteurs: ["mehdi-saidi"]
-image: "/images/blog/box-5g-ou-fibre.webp"
+image: "images/blog/box-5g-ou-fibre.webp"
 imageAlt: "Routeur Wi-Fi posé sur un meuble"
 imageCredit: "Photo par Homethods via Wikimedia (CC BY 2.0)"
 faq:

@@ -7,7 +7,7 @@ categories: ["Mobile"]
 tags: ["réseau mobile", "5g", "couverture", "arcep", "nperf", "orange", "bouygues telecom", "free mobile"]
 author: "mehdi-saidi"
 auteurs: ["mehdi-saidi"]
-image: "/images/blog/meilleur-reseau-mobile.webp"
+image: "images/blog/meilleur-reseau-mobile.webp"
 imageAlt: "Pylône de télécommunications au-dessus d'immeubles bas et de câbles aériens"
 imageCredit: "Photo par PattayaPatrol via Wikimedia (CC BY-SA 4.0)"
 faq:

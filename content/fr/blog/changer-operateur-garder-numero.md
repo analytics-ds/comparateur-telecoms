@@ -7,7 +7,7 @@ categories: ["Guides"]
 tags: ["portabilité", "rio", "3179", "changer d'opérateur", "résiliation", "guide"]
 author: "julie-perrin"
 auteurs: ["julie-perrin"]
-image: "/images/blog/changer-operateur-garder-numero.webp"
+image: "images/blog/changer-operateur-garder-numero.webp"
 imageAlt: "Carte nano SIM et son tiroir posés à côté d'un smartphone"
 imageCredit: "Photo par BwDraco via Wikimedia (CC BY-SA 3.0)"
 faq:

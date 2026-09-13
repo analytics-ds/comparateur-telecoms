@@ -7,7 +7,7 @@ categories: ["Pro"]
 tags: ["pro", "tpe", "pme", "freebox pro", "box pro", "fibre pro", "comparatif"]
 author: "nicolas-garnier"
 auteurs: ["nicolas-garnier"]
-image: "/images/blog/meilleur-operateur-telecom-tpe.webp"
+image: "images/blog/meilleur-operateur-telecom-tpe.webp"
 imageAlt: "Bureau de travail minimaliste avec chaise et cadres"
 imageCredit: "Photo par Bench Accounting via Stocksnap (CC CC0 1.0)"
 faq:

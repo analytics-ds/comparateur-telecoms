@@ -7,7 +7,7 @@ categories: ["Box internet"]
 tags: ["box internet", "sans engagement", "fibre", "freebox", "red by sfr", "comparatif"]
 author: "camille-roux"
 auteurs: ["camille-roux"]
-image: "/images/blog/box-internet-sans-engagement.webp"
+image: "images/blog/box-internet-sans-engagement.webp"
 imageAlt: "Technicien installant une connexion fibre optique dans un logement"
 imageCredit: "Photo par Marufish via Flickr (CC BY-SA 2.0)"
 faq:

@@ -54,7 +54,7 @@
     {{/* Garde-fou : le `with` seul, sans `else`, laissait l'article sans aucun
          visuel quand la recuperation d'image avait echoue (9 articles FR entre le
          10 et le 26/08/2026). On retombe donc sur le visuel par defaut du site. */}}
-    {{ $hero := .Params.image | default "/images/og-default.png" }}
+    {{ $hero := .Params.image | default "images/og-default.png" }}
     <figure class="article-hero-img-wrap" style="margin:0">
       <div class="article-hero-img"><img src="{{ $hero | relURL }}" alt="{{ with $.Params.imageAlt }}{{ . }}{{ else }}{{ $.Title }}{{ end }}" width="1200" height="520" loading="eager" fetchpriority="high"></div>
       {{ with $.Params.imageCredit }}<small class="hero-credit">{{ . }}</small>{{ end }}

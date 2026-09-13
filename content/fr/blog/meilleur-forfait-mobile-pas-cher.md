@@ -7,7 +7,7 @@ categories: ["Mobile"]
 tags: ["forfait mobile", "pas cher", "5g", "sans engagement", "free mobile", "b&you", "red by sfr", "sosh"]
 author: "julie-perrin"
 auteurs: ["julie-perrin"]
-image: "/images/blog/meilleur-forfait-mobile-pas-cher.webp"
+image: "images/blog/meilleur-forfait-mobile-pas-cher.webp"
 imageAlt: "Main tenant un smartphone"
 imageCredit: "Photo par veeterzy via Stocksnap (CC CC0 1.0)"
 faq:
